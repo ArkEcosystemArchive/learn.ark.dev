@@ -8,5 +8,6 @@
 
 ## Terminology
 
-* [What Are ARK Core Network Profiles](terminology/core-network-profiles.md)
+* [Core Network Profiles](terminology/core-network-profiles.md)
+* [Cryptography](terminology/cryptography.md)
 

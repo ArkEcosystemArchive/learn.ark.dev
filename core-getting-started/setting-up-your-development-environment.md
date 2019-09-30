@@ -43,7 +43,7 @@ As the most popular version control software in existence, Git is a staple of ma
 sudo apt-get install -y git curl apt-transport-https update-notifier
 ```
 
-## Step 3: Install NodeJS Runtime
+## Step 3: Install Node.js Runtime
 
 As ARK Core is written exclusively in [Node.js](https://nodejs.org/), the server-side framework for JavaScript, Typescript, installing Node.js is a necessity for core development. The code below installs Node.js from source.
 
@@ -54,7 +54,7 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 ```
 
-## Step 4: Install Package Manager for Node.js Runtime
+## Step 4: Install Yarn Package Manager
 
 [Yarn](https://yarnpkg.com/) is a package manager that seeks to build upon the foundation of Node's npm. Although yarn is not a strict requirement, in many cases it works faster and more elegantly than npm. Most ARK developers use yarn, and as such, you will see yarn commands often used throughout our documentation.
 
@@ -73,7 +73,7 @@ Dependencies are needed for `core` to be compiled, run and controlled while livi
 sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf automake python libpq-dev jq -y
 ```
 
-## Step 6: Clone our Core Repository with Git
+## Step 6: Clone The Core Repository
 
 Let's clone our `core` repository and run the initial `yarn setup` command. We will also checkout the latest `develop` branch. 
 
@@ -87,13 +87,13 @@ git checkout develop
 yarn setup  #run Lerna to clean, bootstrap and build the core packages
 ```
 
-## Step 6: Development Database Setup
+## Step 7: Setting Up a Development Database
 
-ARK Core stores all the blockchain data in a [PostgreSQL](https://www.postgresql.org/) database. You have two options on how to setup your database. 
+ARK Core stores all the blockchain data in a [PostgreSQL](https://www.postgresql.org/) database. You have two options on how to setup your development database. 
 
-### Step 6.1 Database Setup Using Docker
+### Step 7.1 Database Setup Using Docker
 
-If you are already using `Docker` and  have  `docker-compose` installed, then you can generate docker files from the command line, with the `yarn docker ark` command where \(ark is the name of the `network` for which you want to generate docker files - this is more important for bridgechain support later on\). For now let's stick with `ark` as the default name of the network.
+If you are already using `Docker` and  have  `docker-compose` installed, then you can generate docker files from the command line, with the `yarn docker ark` command where \(ark is the name of the `network` for which you want to generate docker files\). For now let's stick with `ark` as the default name of the network.
 
 Executing the command `yarn docker ark` in the root folder of the previously cloned repository, like this: 
 
@@ -132,14 +132,14 @@ To start the PostgreSQL docker container we must go into the corresponding folde
 
 ```bash
 cd core/docker/development/testnet
-docker-compose up postgres #postgres is the name of the container
+docker-compose up postgres #postgres is the name of the PostgreSQL container
 ```
 
 The `docker-compose up postgres` will start PostgresSQL container and expose it to our core via standard PostgreSQL port 5432. 
 
-### Step 6.2 Database Setup by Installing Locally
+### Step 7.2 Database Setup by Installing Locally
 
-If you don't want to install and run docker in your local computer you can install PostgreSQL database natively on your running os. For \*.deb based Linux systems the commands are the following:
+If you don't want to install and run docker on your local computer you can still install PostgreSQL database natively on your running operating system. For \*.deb based Linux systems the commands are the following:
 
 ```bash
 sudo apt-get install postgresql postgresql-contrib -y
@@ -148,7 +148,7 @@ sudo -i -u postgres psql -c "CREATE DATABASE ark_testnet WITH OWNER ark;"
 sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 ```
 
-The commands above install PostgreSQL database locally and create databases for running testnet and devnet networks. 
+The commands above install PostgreSQL database locally and create databases for running testnet and devnet networks with user `ark` as the database owner. If you have skipped the Step 1: User setup, you have to change `ark` user to your development username, usually the logged in username. 
 
 ## Run Above Commands Together In One Setup Script
 
@@ -166,7 +166,7 @@ sudo su - ark
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Dependencies installation script. 
+Dependencies installation script \(to be run under `ark` user\).
 
 {% code-tabs %}
 {% code-tabs-item title="dev-setup.sh" %}
