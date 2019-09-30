@@ -1,8 +1,12 @@
 # Table of contents
 
-* [Welcome To ARK Development Tutorials](README.md)
+* [Welcome to ARK Ecosystem](README.md)
 
-## Getting Started
+## Getting Started With Core Development <a id="core-getting-started"></a>
 
-* [Setting Up Your Development Environment](getting-started/setting-up-your-development-environment.md)
+* [Development Environment Setup](core-getting-started/setting-up-your-development-environment.md)
+
+## Terminology
+
+* [What Are ARK Core Network Profiles](terminology/core-network-profiles.md)
 
