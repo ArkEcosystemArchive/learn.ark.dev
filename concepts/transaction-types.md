@@ -20,7 +20,7 @@ Using[ ARK SDKs](https://sdk.ark.dev), developers can employ the programming lan
 
 For more information about SDK implementations visit [ARK SDKs hub](https://sdk.ark.dev/). 
 
-In the following sections basic transaction types and their structure is presented. If you are interested in the signature generation process and algorithm used, please check the [Cryptography Overview](../concepts/cryptography.md) page.
+In the following sections basic transaction types and their structure is presented. If you are interested in the signature generation process and algorithm used, please check the [Cryptography Overview](cryptography.md) page.
 
 ## Transfer Transaction Type
 

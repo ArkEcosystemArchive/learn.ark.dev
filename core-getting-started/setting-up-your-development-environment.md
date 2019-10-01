@@ -4,7 +4,7 @@ description: >-
   Environment
 ---
 
-# \[Linux\] Development Environment Setup
+# Development Environment Setup
 
 ## Introduction
 
@@ -137,7 +137,7 @@ docker-compose up postgres #postgres is the name of the PostgreSQL container
 
 The `docker-compose up postgres` will start PostgresSQL container and expose it to our core via standard PostgreSQL port 5432. 
 
-### Step 7.2 Database Setup by Installing Locally
+### Step 7.2 Installing Postgres Database System-Wide
 
 If you don't want to install and run docker on your local computer you can still install PostgreSQL database natively on your running operating system. For \*.deb based Linux systems the commands are the following:
 
@@ -167,7 +167,11 @@ sudo su - ark
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Dependencies installation script \(to be run under `ark` user\).
+After creating and logging under `ark` user, you can execute the following script to install our Technology Stack development tools and dependencies. If your default user isn't `ark`, you should copy and modify the script source below.
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/kristjank/tutorials/master/scripts/dev-setup.sh)
+```
 
 {% code-tabs %}
 {% code-tabs-item title="dev-setup.sh" %}
