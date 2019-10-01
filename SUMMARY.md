@@ -9,5 +9,5 @@
 ## Terminology
 
 * [Core Network Profiles](terminology/core-network-profiles.md)
-* [Cryptography](terminology/cryptography.md)
+* [Cryptography Overview](terminology/cryptography.md)
 
