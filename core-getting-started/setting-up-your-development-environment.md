@@ -4,7 +4,7 @@ description: >-
   Environment
 ---
 
-# Development Environment Setup
+# \[Linux\] Development Environment Setup
 
 ## Introduction
 
@@ -87,7 +87,7 @@ git checkout develop
 yarn setup  #run Lerna to clean, bootstrap and build the core packages
 ```
 
-## Step 7: Setting Up a Development Database
+## Step 7: Setting Up The Development Database
 
 ARK Core stores all the blockchain data in a [PostgreSQL](https://www.postgresql.org/) database. You have two options on how to setup your development database. 
 

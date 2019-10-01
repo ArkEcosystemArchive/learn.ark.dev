@@ -7,7 +7,7 @@ description: >-
 # Core Network Profiles
 
 {% hint style="warning" %}
-It is recommended to start developing with a Testnet network, as you need to become familiar with the installation of your bridgechain and how the network operates. You don't need to depend on a server network of peers, as it simulates them on your local machine, so you can focus on development process.
+It is recommended to start developing with a Testnet network, as you need to become familiar with the installation of your bridgechain and how the network operates. You don't need to depend on a server network of peers, as it simulates them on your local machine, so you can focus on the development process.
 {% endhint %}
 
 ## Mainnet
