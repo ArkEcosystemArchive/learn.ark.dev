@@ -19,3 +19,9 @@ sudo -i -u postgres psql -c "CREATE USER ark  WITH PASSWORD 'password' CREATEDB;
 sudo -i -u postgres psql -c "CREATE DATABASE ark_testnet WITH OWNER ark;"
 sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 
+# clone and yarn setup
+git clone https://github.com/arkecosystem/core
+cd core
+git checkout develop
+
+yarn setup 
