@@ -105,7 +105,7 @@ yarn docker ark
 will generate the following docker files inside our `core/docker` folder \(see folder tree below\):
 
 ```bash
-core/docker tree
+#core/docker tree in the cloned repository folder
 ├── development
 │   ├── devnet
 │   │   ├── Dockerfile
@@ -157,6 +157,7 @@ First create user ARK with default password `password`. This will make it easier
 {% code-tabs %}
 {% code-tabs-item title="create-user.sh" %}
 ```bash
+#!/usr/bin/env bash
 sudo adduser ark
 sudo usermod -aG sudo ark
 
@@ -190,6 +191,7 @@ sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf a
 sudo apt-get install postgresql postgresql-contrib -y
 sudo -i -u postgres psql -c "CREATE USER ark  WITH PASSWORD 'password' CREATEDB;"
 sudo -i -u postgres psql -c "CREATE DATABASE ark_testnet WITH OWNER ark;"
+sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

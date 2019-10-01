@@ -9,15 +9,19 @@ description: >-
 
 ## Introduction
 
+This section provides definition of common cryptography terms used through the ARK Ecosystem product landscape. You will learn the importance of your passphrase and how it translates to private key, public key and wallet address generation. We also explain some common encryption algorithms and encoding protocols.
+
+## Passphrase
+
 {% hint style="danger" %}
 The **passphrase** is the master password \(key\) for your ARK tokens. Every ARK address has its own unique passphrase. With the passphrase you can sign transactions to send your ARK or vote for a delegate.
 
-Do not lose it, and do not share it with others, or you could lose access to your ARK tokens. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. We CANNOT recover any lost passphrases.
+Do not lose it, and do not share it with others, or you could lose access to your ARK tokens. If you lose your passphrase, or if it is stolen, there is nothing we can do to help you. **We CANNOT recover any lost passphrases.**
 {% endhint %}
 
-A [passphrase](/faq/passphrases.html) is a "key to the castle." It is used to directly calculate the [PrivateKey]() of an [ARK account](/glossary/#account) and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
+A [passphrase](/faq/passphrases.html) is a "key to the castle." It is used to directly calculate the [PrivateKey](cryptography.md#privatekey) of an [ARK account](/glossary/#account) and should never be shared, stored irresponsibly, or transmitted over the internet. The only person that should ever have access to a passphrase is the owner of its account.
 
-We can technically use any word, phrase, or string as a passphrase which will result in a valid ARK [Address]() or Wallet; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
+We can technically use any word, phrase, or string as a passphrase which will result in a valid ARK [Address](cryptography.md#address-wallet) or Wallet; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
 
 To promote usability while also maintaining security, ARK passphrases are implemented using the [BIP39 Protocol](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Simply, it's a mnemonic sentence constructed via randomly chosen words from a large [wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md). From here, that sentence or "Passphrase" is piped through a series of hashing, curve, and encoding algorithms to derive a [PrivateKey]() / [WIF](), a [PublicKey](), and subsequently [Addresses]() / Wallets and [Signatures]().
 
@@ -88,15 +92,15 @@ The DEC representation is the "base 10" interpretation of our PrivateKey and giv
 
 ### WIF \(PrivateKey\)
 
-WIF stands for "Wallet Import Format", and is a [BASE58]()-encoded PrivateKey prepended by a network prefix-byte \(`0xaa` for ARK Mainnet & Devnet\).
+WIF stands for "Wallet Import Format", and is a [BASE58](cryptography.md#base-58-check)-encoded PrivateKey prepended by a network prefix-byte \(`0xaa` for [ARK Mainnet & Devnet Network](core-network-profiles.md)\).
 
 ![](../.gitbook/assets/wif.svg)
 
-It's essentially a more useable/human-readable [PrivateKey]() and should be treated with the same diligence with regards to storage and security.
+It's essentially a more useable/human-readable [PrivateKey](cryptography.md#privatekey) and should be treated with the same diligence with regards to storage and security.
 
 ## PublicKey
 
-A PublicKey is like an ID or Passport. It is a mathematical proof of identity and is derived from a [PrivateKey]() via [ECDSA]() and [SECP256K1]() computation.
+A PublicKey is like an ID or Passport. It is a mathematical proof of identity and is derived from a PrivateKey via ECDSA and SECP256K1 computation.
 
 ![](../.gitbook/assets/publickey.svg)
 
@@ -254,7 +258,7 @@ Remember that this same PrivateKey also has a matching PublicKey. That means a S
 
 ARK Signatures also use DER Encoding.
 
-## Algorithms and Encoding
+## Algorithms
 
 ### ECDSA
 
@@ -268,7 +272,7 @@ It is a standard to sign and verify transactions/messages and Signatures using [
 
 ### **SECP256K1**
 
-[SECP256K1](https://en.bitcoinwiki.org/wiki/Secp256k1) defines the set of [ECDSA]() parameters used to produce output "deterministically", meaning the same input will always result in the same output. Additionally, no two inputs will ever produce the same output; It is also hard to reverse. This is known as the [Discrete Logarithm Problem](https://en.wikipedia.org/wiki/Discrete_logarithm#Cryptography) and is the basis for Curve Cryptography.
+[SECP256K1](https://en.bitcoinwiki.org/wiki/Secp256k1) defines the set of ECDSA parameters used to produce output "deterministically", meaning the same input will always result in the same output. Additionally, no two inputs will ever produce the same output; It is also hard to reverse. This is known as the [Discrete Logarithm Problem](https://en.wikipedia.org/wiki/Discrete_logarithm#Cryptography) and is the basis for Curve Cryptography.
 
 | Curve Parameters |
 | :---: |
