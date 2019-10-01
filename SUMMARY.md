@@ -6,8 +6,8 @@
 
 * [Development Environment Setup](core-getting-started/setting-up-your-development-environment.md)
 
-## Terminology
+## Key Concepts <a id="concepts"></a>
 
-* [Core Network Profiles](terminology/core-network-profiles.md)
-* [Cryptography Overview](terminology/cryptography.md)
+* [Cryptography Overview](concepts/cryptography.md)
+* [Core Network Profiles](concepts/core-network-profiles.md)
 

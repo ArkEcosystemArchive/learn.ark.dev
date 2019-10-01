@@ -23,9 +23,9 @@ A [passphrase](/faq/passphrases.html) is a "key to the castle." It is used to di
 
 We can technically use any word, phrase, or string as a passphrase which will result in a valid ARK [Address](cryptography.md#address-wallet) or Wallet; however, it is heavily discouraged as the security of an address relies on the randomness of its Passphrase. Humans are bad at creating randomness, and entering sequences of random letters and numbers isn't easy to do accurately.
 
-To promote usability while also maintaining security, ARK passphrases are implemented using the [BIP39 Protocol](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Simply, it's a mnemonic sentence constructed via randomly chosen words from a large [wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md). From here, that sentence or "Passphrase" is piped through a series of hashing, curve, and encoding algorithms to derive a [PrivateKey]() / [WIF](), a [PublicKey](), and subsequently [Addresses]() / Wallets and [Signatures]().
+To promote usability while also maintaining security, ARK passphrases are implemented using the [BIP39 Protocol](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki). Simply, it's a mnemonic sentence constructed via randomly chosen words from a large [wordlist](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md). From here, that sentence or "Passphrase" is piped through a series of hashing, curve, and encoding algorithms to derive a [PrivateKey](cryptography.md#privatekey) / [WIF](cryptography.md#wif-privatekey), a [PublicKey](cryptography.md#publickey), and subsequently [Addresses](cryptography.md#address-wallet) / Wallets and [Signatures](cryptography.md#signature).
 
-![](../.gitbook/assets/overview.svg)
+![Cryptography overview](../.gitbook/assets/overview_nologo.svg)
 
 The following examples will be using test-fixtures from the [ARK Core](https://github.com/ARKEcosystem/core/) repo on [GitHub](https://github.com/ARKEcosystem/).
 
@@ -66,7 +66,7 @@ const fixture = {
 
 A PrivateKey is a 256-bit integer represented by a 32-byte Hex-encoded string of 64 characters obtained via [SHA256 hashing](https://en.bitcoinwiki.org/wiki/SHA-256) of a [Passphrase](../core-getting-started/setting-up-your-development-environment.md#introduction).
 
-![](../.gitbook/assets/privatekey.svg)
+![PrivateKey Generation Steps](../.gitbook/assets/private_key_nologo.svg)
 
 To understand the significance of this large number, consider the following:
 
@@ -94,7 +94,7 @@ The DEC representation is the "base 10" interpretation of our PrivateKey and giv
 
 WIF stands for "Wallet Import Format", and is a [BASE58](cryptography.md#base-58-check)-encoded PrivateKey prepended by a network prefix-byte \(`0xaa` for [ARK Mainnet & Devnet Network](core-network-profiles.md)\).
 
-![](../.gitbook/assets/wif.svg)
+![WIF Encoding](../.gitbook/assets/wif_nologo-1.svg)
 
 It's essentially a more useable/human-readable [PrivateKey](cryptography.md#privatekey) and should be treated with the same diligence with regards to storage and security.
 
@@ -102,7 +102,7 @@ It's essentially a more useable/human-readable [PrivateKey](cryptography.md#priv
 
 A PublicKey is like an ID or Passport. It is a mathematical proof of identity and is derived from a PrivateKey via ECDSA and SECP256K1 computation.
 
-![](../.gitbook/assets/publickey.svg)
+![PublicKey Generation Steps](../.gitbook/assets/publickey_nologo.svg)
 
 ARK also uses "Point Compression" to obtain compressed PublicKeys that are 33-bytes in length.
 
@@ -112,7 +112,7 @@ An ARK address is shareable much like an e-mail address. It is the destination t
 
 Since an address is derived from a PublicKey, that means it is also mathematically tied to a PrivateKey and Passphrase.
 
-![](../.gitbook/assets/address.svg)
+![ARK Address Generation Steps](../.gitbook/assets/address_nologo.svg)
 
 ### Network Prefixes
 
@@ -254,9 +254,9 @@ A Signature is essentially proof that a message or transaction was "signed" by a
 
 Remember that this same PrivateKey also has a matching PublicKey. That means a Signature is computationally linked to its corresponding PublicKey using ECDSA and SECP256K1 standards.
 
-![](../.gitbook/assets/signature.svg)
+![Signing Process Example](../.gitbook/assets/signature_msg_nologo.svg)
 
-ARK Signatures also use DER Encoding.
+ARK Signatures use DER Encoding.
 
 ## Algorithms
 
@@ -296,7 +296,7 @@ An ARK Signature is [DER Encoded](https://en.wikipedia.org/wiki/X.690#DER_encodi
 
 Upon obtaining a Signature from the ECDSA/SECP256K1 algorithm, it will first be in its raw form known as an "r" and "s" value.
 
-![](../.gitbook/assets/signature_der.svg)
+![Signature: DER \(X.690 : ASN.1\) Encoding](../.gitbook/assets/signature_der_nologo.svg)
 
 Signature \(r, s\):
 
