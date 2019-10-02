@@ -4,7 +4,7 @@ description: >-
   Server
 ---
 
-# Core Node Running Modes
+# Core Run Modes
 
 ## Available Running Modes
 

@@ -3,17 +3,17 @@
 * [Welcome to ARK Ecosystem](README.md)
 * [Technology Stack](technology-stack.md)
 
-## Getting Started With Core Development <a id="core-getting-started"></a>
+## Getting Started <a id="core-getting-started"></a>
 
 * [Development Environment Setup](core-getting-started/setting-up-your-development-environment.md)
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 
 ## Key Concepts <a id="concepts"></a>
 
-* [Transaction Types Overview](concepts/transaction-types.md)
+* [Transaction Types](concepts/transaction-types.md)
 * [Cryptography Overview](concepts/cryptography.md)
-* [Core Network Profiles](concepts/core-network-profiles.md)
-* [Core Node Running Modes](concepts/core-node-running-modes.md)
+* [Network Profiles](concepts/core-network-profiles.md)
+* [Core Run Modes](concepts/core-node-running-modes.md)
 
 ## Additional Resources
 
