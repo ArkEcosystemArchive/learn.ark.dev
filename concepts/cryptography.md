@@ -64,7 +64,7 @@ const fixture = {
 
 ## PrivateKey
 
-A PrivateKey is a 256-bit integer represented by a 32-byte Hex-encoded string of 64 characters obtained via [SHA256 hashing](https://en.bitcoinwiki.org/wiki/SHA-256) of a [Passphrase](../core-getting-started/setting-up-your-development-environment.md#introduction).
+A PrivateKey is a 256-bit integer represented by a 32-byte Hex-encoded string of 64 characters obtained via [SHA256 hashing](https://en.bitcoinwiki.org/wiki/SHA-256) of a [Passphrase](../core-getting-started/setting-up-your-development-environment/#introduction).
 
 ![PrivateKey Generation Steps](../.gitbook/assets/private_key_nologo.svg)
 

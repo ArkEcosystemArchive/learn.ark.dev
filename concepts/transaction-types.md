@@ -22,6 +22,17 @@ For more information about SDK implementations visit [ARK SDKs hub](https://sdk.
 
 In the following sections basic transaction types and their structure is presented. If you are interested in the signature generation process and algorithm used, please check the [Cryptography Overview](cryptography.md) page.
 
+### List of Transaction Types:
+
+| Transaction Types |  |
+| :--- | :--- |
+| [Transfer](transaction-types.md#transfer-transaction-type) | [MultiPayment](transaction-types.md#multipayment-transaction) |
+| [Second Signature Registration](transaction-types.md#second-signature-registration) | [Delegate Resignation](transaction-types.md#delegate-resignation) |
+| [Delegate Registration](transaction-types.md#delegate-registration) | [HTLC Lock](transaction-types.md#htlc-lock) |
+| [Vote](transaction-types.md#vote-transaction) | [HTLC Claim](transaction-types.md#htlc-claim) |
+| [Multisignature](transaction-types.md#multisignature-transaction) | [HTLC Refund](transaction-types.md#htlc-refund) |
+| [IPFS Transaction](transaction-types.md#ipfs-transaction) |  |
+
 ## Transfer Transaction Type
 
 ### No VendorField

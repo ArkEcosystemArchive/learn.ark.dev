@@ -3,9 +3,12 @@
 * [Welcome to ARK Ecosystem](README.md)
 * [Technology Stack](technology-stack.md)
 
-## Getting Started <a id="core-getting-started"></a>
+## Getting Started With Core <a id="core-getting-started"></a>
 
-* [Development Environment Setup](core-getting-started/setting-up-your-development-environment.md)
+* [Development Environment Setup](core-getting-started/setting-up-your-development-environment/README.md)
+  * [Linux](core-getting-started/setting-up-your-development-environment/linux.md)
+  * [Docker](core-getting-started/setting-up-your-development-environment/docker.md)
+  * [Windows](core-getting-started/setting-up-your-development-environment/windows.md)
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 
 ## Key Concepts <a id="concepts"></a>
