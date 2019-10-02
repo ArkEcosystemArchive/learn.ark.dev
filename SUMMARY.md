@@ -10,9 +10,7 @@
 
 ## Key Concepts <a id="concepts"></a>
 
-* [Transaction Types Structure](concepts/transaction-types.md)
+* [Transaction Types Overview](concepts/transaction-types.md)
 * [Cryptography Overview](concepts/cryptography.md)
 * [Core Network Profiles](concepts/core-network-profiles.md)
-
-## Tools
 
