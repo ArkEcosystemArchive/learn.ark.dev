@@ -19,6 +19,7 @@
 
 * [Deploy Your Own Chain](https://deployer.ark.io)
 * [Whitepaper](https://whitepaper.ark.io)
+* [Official ARK.io Website](https://ark.io)
 
 ## Have a question?
 
