@@ -12,7 +12,7 @@ ARK Core is written in [TypeScript](https://github.com/microsoft/typescript), an
 
 The following development tools need to be installed on your machine to develop an application using ARK Core:
 
-* [NodeJS](https://nodejs.org/en/) As ARK Core is written exclusively in NodeJS, the server-side framework for JavaScript, installing Node is a necessity for core development.
+* [NodeJS](https://nodejs.org/en/) - As ARK Core is written exclusively in NodeJS, the server-side framework for JavaScript, installing Node is a necessity for core development.
 * [Hapi.js](https://hapi.dev/) - A rich web framework for building applications and services. A base for our public REST API.
 * [SocketCluster.io](https://socketcluster.io/#!/) - SocketCluster is an open source real-time framework for Node.js. It supports both direct client-server communication and group communication via pub/sub channels. It is designed to easily scale to any number of processes/hosts. We use SocketCluster for the peer-to-peer communication enabling the blockchain protocol.
 * [PostgreSQL](https://www.postgresql.org/) - our "standard" database is Postgres. Postgres is the most "mature" Open Source Relational Database. It's 100% Free \(including all "advanced" features\).
@@ -21,9 +21,9 @@ The following development tools need to be installed on your machine to develop 
 
 ## Operating System
 
-While we have a strong preference for Linux \(e.g. Ubuntu or CentOS\)  we know that both Node.js and Postgres run on almost any environment including Microsoft Windows Desktop & Server. 
+While we have a strong preference for Linux \(e.g. Ubuntu or CentOS\), however we know that both Node.js and Postgres run on almost any environment including Microsoft Windows Desktop & Server. 
 
 {% hint style="info" %}
-**All production and support tools are developed for Linux operating systems**. We do not support Windows environment operating system in production.
+**All production and support tools are developed for Linux operating systems**. We do not support Windows environment operating system in production. However it is still possible to develop your applications on a windows box.
 {% endhint %}
 

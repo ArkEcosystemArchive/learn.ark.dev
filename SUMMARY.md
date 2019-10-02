@@ -14,3 +14,13 @@
 * [Cryptography Overview](concepts/cryptography.md)
 * [Core Network Profiles](concepts/core-network-profiles.md)
 
+## Additional Resources
+
+* [Deploy Your Own Chain](https://deployer.ark.io)
+* [Whitepaper](https://whitepaper.ark.io)
+
+## Have a question?
+
+* [Ask in our Public Slack](https://ark.io/slack)
+* [Go to our Developer Hub](https://ark.io/developers)
+

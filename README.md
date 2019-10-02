@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This is the ARK Ecosystem Developer Guidebook and Tutorials page. After reading this, you'll be ready to build your own ARK-powered applications and blockchains -- perhaps with the help of some code from our tutorials.
+This is the ARK Ecosystem Developer Guidebook and Tutorials space. This Space is dedicated to `core` development within ARK Ecosystem. After reading this, you'll be ready to build your own ARK-powered applications and blockchains - perhaps with the help of some code from our tutorials. Welcome and happy coding.
 
 ## What is ARK?
 
