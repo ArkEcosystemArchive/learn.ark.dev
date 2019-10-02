@@ -40,15 +40,14 @@ If you want to start a `forger`, you can use any of the following commands \(ins
 
 ## Network Boot Process
 
-This last command, `yarn full:testnet`, is where the magic happens. Let us do a quick walkthrough of what happens when this command is run:
+Command, `yarn full:testnet`, is where the magic happens. Let us do a quick walkthrough of what happens when this command is run:
 
 1.The `full:testnet` command is run within `core`, which as of the time of writing executes the following command in `npm`: `cross-env CORE_PATH_CONFIG=./bin/config/testnet CORE_ENV=test yarn ark core:run --networkStart`
 
 2. As seen in the previous step, the `./bin/run` file is called with the `core:run` command. That command looks like this:
 
 {% hint style="success" %}
-Take a look at the following pieces of code to get a better understand of what commands are executed under the hood and what flags can be used to manipulate behaviour and pass in data.  
-
+Take a look at the following pieces of code to get a better understand of what commands are executed under the hood and what flags can be used to manipulate behaviour and pass in data.
 
 1. [core:run](https://github.com/ARKEcosystem/core/blob/develop/packages/core/src/commands/core/run.ts)
 2. [BaseCommand](https://github.com/ARKEcosystem/core/blob/develop/packages/core/src/commands/command.ts#L20-L61)
