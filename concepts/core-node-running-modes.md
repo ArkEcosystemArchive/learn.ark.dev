@@ -38,7 +38,7 @@ If you want to start a `forger`, you can use any of the following commands \(ins
 * `yarn forger:devnet` =&gt; `packages/core/bin/config/networks/devnet`
 * `yarn forger:testnet` =&gt; `packages/core/bin/config/networks/testnet`
 
-## Network Boot Process
+## Core Boot Process
 
 Command, `yarn full:testnet`, is where the magic happens. Let us do a quick walkthrough of what happens when this command is run:
 

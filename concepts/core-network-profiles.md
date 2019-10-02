@@ -22,7 +22,7 @@ is the network where testing occurs before being deployed on the mainnet. In thi
 
 is a _Testing Network_ that you usually run locally when testing and developing changes and don't expect to involve a wider audience. Running a Testnet means that you can run a blockchain on your local machine for development purposes. Changes you test here are usually pushed to Devnet for a wider audience. This network is _play-around coins and transactions._
 
-### How Many Servers \(Peers\) Are Required To Run a Network 
+## How Many Servers \(Peers\) Are Required To Run a Network 
 
 The number of peers required for a functioning network changes depending on what type of network you are deploying:
 
