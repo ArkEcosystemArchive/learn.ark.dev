@@ -13,6 +13,7 @@
 * [Transaction Types Overview](concepts/transaction-types.md)
 * [Cryptography Overview](concepts/cryptography.md)
 * [Core Network Profiles](concepts/core-network-profiles.md)
+* [Core Node Running Modes](concepts/core-node-running-modes.md)
 
 ## Additional Resources
 

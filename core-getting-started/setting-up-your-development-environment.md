@@ -167,7 +167,7 @@ sudo su - ark
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-After creating and logging under `ark` user, you can execute the following script to install our Technology Stack development tools and dependencies. If your default user isn't `ark`, you should copy and modify the script source below.
+After creating and logging under `ark` user, you can execute the following script to install our development tools and dependencies from our [Technology Stack](../technology-stack.md). If your default user isn't `ark`, you should copy and modify the script source below.
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/kristjank/tutorials/master/scripts/dev-setup.sh)
