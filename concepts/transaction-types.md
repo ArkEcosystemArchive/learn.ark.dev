@@ -35,6 +35,12 @@ In the following sections basic transaction types and their structure is present
 
 ## Transfer Transaction Type
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 ### No VendorField
 
 #### Signed JSON Payload
@@ -128,6 +134,12 @@ ff0217010000000000020000000000000003d59f3b7d698536f6925a77f22d484d518b06a2c09318
 
 ## Second Signature Registration
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 #### Signed JSON Payload
 
 ```javascript
@@ -172,6 +184,12 @@ ff0217010000000100020000000000000002e0c063777427ac196af3c426fd648231ebc4ea06fff5
 | **Signature:** | **\[67\]** | **64** | `0xadb983dd28827860f69c6a98b2f9db88a9e084cc7fe3a691463377c3225b02fee24547b516d1cf05f2f77b65a9c36069f6540605c01694008e2a5cb4fc88f62f` |
 
 ## Delegate Registration
+
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
 
 #### Signed JSON Payload
 
@@ -219,6 +237,12 @@ ff0217010000000200020000000000000002a574b8995542631976691a7f73b59e4700cd84badb83
 
 ## Vote Transaction
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 #### Signed JSON Payload
 
 ```javascript
@@ -264,6 +288,12 @@ ff0217010000000300020000000000000002555806bca6737eaeaff6434d5171bac8aeb72533ed9b
 | **Signature:** | **\[94\]** | **64** | `0x77a40e4b4170ce613c8f9ccc0650887349330a9a8b459189ee379c88cf2c8506d65aa3ca8293705373f1bde8d6b27e5071de1785ac9c0182f41e364f8f9e3b64` |
 
 ## MultiSignature Transaction
+
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP18](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-18.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
 
 #### Signed JSON Payload
 
@@ -331,6 +361,12 @@ ff0217010000000400020000000000000003b593aa66b53525c5399b4af5a4f583dede1c2a46176c
 
 ## IPFS Transaction
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 #### Signed JSON Payload
 
 ```javascript
@@ -383,6 +419,12 @@ ff02170100000005000200000000000000038e000c902d4551065ac5705637c685d52e6ac4032e15
 | **32-Byte Hash** | **32** _**\(bytes\)**_ | `0x9608184d6cee2b9af8e6c2a46fc9318adf73329aeb8a86cf8472829fff5bb89e` |
 
 ## MultiPayment Transaction
+
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
 
 #### Signed Json Payload
 
@@ -570,6 +612,12 @@ ff0217010000000600020000000000000002a53371b23f991740f968e3d96de42a67b4242e267cad
 
 ## Delegate Resignation
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 #### Signed JSON Payload
 
 ```javascript
@@ -609,6 +657,12 @@ ff02170100000007000200000000000000037a12518205254e6ebf25290d9786fd9821c43bb7319c
 | **Signature:** | **\[59\]** | **64** | `0xad7a61a76433260ef9dc687311ab6c657f6c733dbf1a80c3514da823d43226235a70a94fa1a0b8cb2f4b3d0be5011945bfbe8c8fc5b5ca0e07f6c2a37e3cf11b` |
 
 ## HTLC Lock
+
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
 
 #### Signed JSON Payload
 
@@ -664,6 +718,12 @@ ff02170100000008000200000000000000020d272fab67c179a9e4df4d006344d3ca47fb531b4246
 
 ## HTLC Claim
 
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+
 #### Signed JSON Payload
 
 ```javascript
@@ -710,6 +770,12 @@ ff02170100000009000300000000000000039d974aa6feff6a19fde69a8a8b25b991798e98252765
 | **Signature:** | **\[123\]** | **64** | `0xc2b9f3655174c13686dde428cf18d5d18f465712985a7086b04860457e8d2db64443083bdf69fdc5b94dcd2c4c722606cf0e058ffae98d8f9f069177c5c189ab` |
 
 ## HTLC Refund
+
+| References |  |
+| :--- | :--- |
+| ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
+| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
+| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
 
 #### Signed JSON Payload
 
