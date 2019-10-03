@@ -96,7 +96,7 @@ All nodes broadcast the transactions they receive to their peers through the P2P
 
 When deciding on which transactions to include in the block, the transaction pool considers two factors: **fee value** and **pool insertion** time. The pool prefers transactions with higher fees and decides between transactions with similar fees by comparing their insertion sequence numbers. These considerations may be configured as described in [dynamic fees](https://docs.ark.io/tutorials/node/dynamic-fees.html).
 
-## Transactions Serialization Process <a id="serialize"></a>
+## Transaction Serialization Process <a id="serialize"></a>
 
 All transactions are serialized and signed on client applications prior to submission to Core Server nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the ARK blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. To learn more about serialization and specific transaction types look into this document:
 
