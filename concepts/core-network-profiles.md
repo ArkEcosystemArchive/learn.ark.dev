@@ -16,7 +16,7 @@ is the network you will be running in production, and it is the backbone of your
 
 ## Devnet
 
-is the network where testing occurs before being deployed on the mainnet. In this _Development Network_, developers try to break things or test new features. If your project is open to community devs, they will be using this network to suggest and test network improvements. Be advised that due to the nature of blockchain and immutability, we strongly recommend that changes are tested on devnet before you push them to live production on Mainnet. This network is _play-around coins and transactions._
+is the network where testing occurs before being deployed on the Mainnet. In this _Development Network_, developers try to break things or test new features. If your project is open to community devs, they will be using this network to suggest and test network improvements. Be advised that due to the nature of blockchain and immutability, we strongly recommend that changes are tested on Devnet before you push them to live production on Mainnet. This network is _play-around coins and transactions._
 
 ## Testnet
 
