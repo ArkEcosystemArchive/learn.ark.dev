@@ -4,7 +4,7 @@ description: This page describes the tools and technologies we use daily
 
 # Technology Stack
 
-As a team of people using technology to make DLT products, it's essential to be unambiguous about the technology/tools we use, so that everyone is clear what we all need to learn/use to make product\(s\) that are functional, fast, beautiful, useable and reliable!
+As a team of people using technology to make DLT products, it's essential to be unambiguous about the technology/tools we use, so that everyone is clear what we all need to learn/use to make product\(s\) that are functional, fast, beautiful, usable and reliable!
 
 ARK Core is written in [TypeScript](https://github.com/microsoft/typescript), and it has been using [Lerna](https://github.com/lerna/lerna) to manage the development and publication of its packages and uses [Node.js](https://nodejs.org) as execution environment. 
 

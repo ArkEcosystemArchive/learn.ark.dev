@@ -10,7 +10,7 @@ description: >-
 
 Core Server can be run in the following general modes:
 
-* **Relay Mode**- listens to blockchain traffic and replicates and validates block data 
+* **Relay Mode** - listens to blockchain traffic, replicates and validates block data 
 * **Forger Mode** - creates new blocks and broadcasts them via relay nodes to the p2p network
 * **Relay and Forger Mode** - both run under a single process
 
