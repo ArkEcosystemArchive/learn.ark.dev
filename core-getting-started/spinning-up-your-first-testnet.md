@@ -72,10 +72,10 @@ We should get the following **response**:
 
 Your core server is now running and responding to your requests. Look at the [Public REST API](https://api.ark.dev) and play with some requests so you get a better feel for how things run. Try some of the following endpoints:
 
-1. [Retrieve Node Configuration](https://api.ark.dev/public/endpoints/node/#retrieve-the-configuration)
-2. [Retrieve The Cryptography Configuration](https://api.ark.dev/public/endpoints/node/#retrieve-the-cryptography-configuration)
-3. [List All Transactions](https://api.ark.dev/public/endpoints/transactions/#list-all-transactions)
-4. Explore more endpoints
+1. [Retrieve Node Configuration](https://api.ark.dev/public-rest-api/endpoints/node#retrieve-the-configuration)
+2. [Retrieve The Cryptography Configuration](https://api.ark.dev/public-rest-api/endpoints/node#retrieve-the-cryptography-configuration)
+3. [List All Transactions](https://api.ark.dev/public-rest-api/endpoints/transactions#list-all-transactions)
+4. [Explore more endpoints](https://api.ark.dev)
 
 In the next phase we will build a simple transaction using the `core-tester-cli` package and post it to the local network. 
 

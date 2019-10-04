@@ -15,7 +15,7 @@ This guide is for setting up the development environment with Docker. If you are
 In the next sections we will explain two approaches on how you can setup you development environment with docker:
 
 1. \*\*\*\*[**Run a PostgreSQL container while using NodeJS from your local environment**](docker.md#approach-1-containerize-only-the-persistent-store)\*\*\*\*
-2. \*\*\*\*[**Run a PostgreSQL container, build and run ARK-Core using a mounted volume**](docker.md#approach-2-serve-ark-core-as-a-collection-of-containers)\*\*\*\*
+2. \*\*\*\*[**Run a PostgreSQL container, build and run ARK-Core using a mounted volume**](docker.md#approach-2-serve-core-server-as-a-collection-of-containers)\*\*\*\*
 
 ## Base Step: Generate the Docker Configurations
 
