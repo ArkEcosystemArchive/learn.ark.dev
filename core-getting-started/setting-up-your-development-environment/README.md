@@ -31,7 +31,3 @@ This tutorials are for **setting up the development environment** for ARK core. 
 * [Core Server Installation Instructions](https://docs.ark.io/tutorials/node/setup.html#bare-metal) - Server Installation Instructions For Production Node
 {% endhint %}
 
-
-
-
-
