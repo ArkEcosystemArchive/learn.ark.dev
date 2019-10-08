@@ -21,6 +21,10 @@ docker-compose up postgres #start postgres testnet container
 
 Let's jump to the `core/packages/core` and start our first testnet with the commands below:
 
+{% hint style="info" %}
+Please make sure you have already run the build command **`yarn setup`** from **`core`** root folder.
+{% endhint %}
+
 ```bash
 cd core/packages/core 
 yarn full:testnet #run the testnet blockchain on your local computer
