@@ -4,7 +4,7 @@ description: >-
   Environment
 ---
 
-# Linux
+# Linux, macOS
 
 This guide will take you through the basic steps of setting up a development environment from scratch on a fresh Linux \(\*.deb based\) box.
 
@@ -191,5 +191,9 @@ sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+## Start Core and Play With Public API
 
+You can jump to Spinning Up Your First Testnet Section here and test your local Core Server, by following the link below:
+
+{% page-ref page="../spinning-up-your-first-testnet.md" %}
 

@@ -1,8 +1,10 @@
 ---
-description: Explaining How To Set Up Docker Development Environment
+description: >-
+  Explaining How To Set Up Docker Development Environment On Unix Based
+  Operating Systems
 ---
 
-# Docker
+# Docker on Linux, macOS
 
 ## Introduction
 
@@ -12,14 +14,23 @@ Docker is the de facto industry standard for packaging applications into a conta
 This guide is for setting up the development environment with Docker. If you are looking for ARK Core Production ready Docker images, they are now available at [Docker Hub](https://hub.docker.com/r/arkecosystem/core), but are not meant to be used for development purposes.
 {% endhint %}
 
-In the next sections we will explain two approaches on how you can setup you development environment with docker:
+## Step 1: Clone Core Repository
 
-1. \*\*\*\*[**Run a PostgreSQL container while using NodeJS from your local environment**](docker.md#approach-1-containerize-only-the-persistent-store)\*\*\*\*
-2. \*\*\*\*[**Run a PostgreSQL container, build and run ARK-Core using a mounted volume**](docker.md#approach-2-serve-core-server-as-a-collection-of-containers)\*\*\*\*
+Let's clone our `core` repository and run the initial `yarn setup` command. We will also checkout the latest `develop` branch. 
 
-## Base Step: Generate the Docker Configurations
+`yarn setup` command leverages [Lerna](https://github.com/lerna/lerna) to clean, bootstrap and build the core packages \(including transpiling typescript\). For mode information look into core's `package.json` file in the root folder.
 
-ARK Core include several `Dockerfile` and `docker-compose.yml` templates to ease development. They can be used to generate different configurations, depending on the network and token.
+```bash
+git clone https://github.com/arkecosystem/core
+cd core
+git checkout develop
+
+yarn setup  #run Lerna to clean, bootstrap and build the core packages
+```
+
+## Step 2: Generate the Docker Configurations
+
+ARK Core includes several `Dockerfile` and `docker-compose.yml` templates to ease development. They can be used to generate different configurations, depending on the [network](../../concepts/core-network-profiles.md) and token.
 
 For instance, you could use this command \(to be run from `core` root folder\):
 
@@ -28,6 +39,15 @@ yarn docker ark
 ```
 
 This command creates a new directory \(`docker`\) that contains 1 folder per network. You can read more about generating of Docker configurations [here.](linux.md#step-7-1-database-setup-using-docker)
+
+{% hint style="info" %}
+Once your basic docker configurations are generated, you can select one of the two available **approaches** on how to best utilize the most fitting docker development setup.
+{% endhint %}
+
+In the next sections we will explain two approaches on how you can setup you development environment with docker:
+
+1. \*\*\*\*[**Run a PostgreSQL container while using NodeJS from your local environment**](docker.md#approach-1-containerize-only-the-persistent-store)\*\*\*\*
+2. \*\*\*\*[**Run a PostgreSQL container, build and run ARK-Core using a mounted volume**](docker.md#approach-2-serve-core-server-as-a-collection-of-containers)\*\*\*\*
 
 ## Approach 1: Containerize Only the Persistent Store
 
@@ -55,7 +75,7 @@ docker-compose down -v
 docker-compose up postgres -d
 ```
 
-## Approach 2: Serve Core Server as a Collection of Containers
+## Approach 2: Serve Core Node and Postgres as a Collection of Containers
 
 **This approach runs a PostgreSQL container, builds and runs ARK-Core using a mounted volume.** When a container is built, all files are copied inside the container. It cannot interact with the host's filesystem unless a directory is specifically [mounted](https://docs.docker.com/storage/volumes/) during container start. This configuration works well when developing ARK Core itself, as you do not need to rebuild the container to test your changes.
 
@@ -82,4 +102,10 @@ _Need to start everything from scratch and make sure there are no remaining cach
 {% hint style="danger" %}
 Development files/presets are not Production ready. Official Production ARK-Core Docker images are now available at [Docker Hub](https://hub.docker.com/r/arkecosystem/core).
 {% endhint %}
+
+## Start core and play with Public API
+
+You can jump to Spinning Up Your First Testnet Section here and test your local Core Server, by following the link below:
+
+{% page-ref page="../spinning-up-your-first-testnet.md" %}
 
