@@ -32,7 +32,7 @@ Transactions are received at the POST transactions endpoint of the Public API. F
 
 1. Transaction Payload is received at the Core Server \([Public API Endpoint](https://api.ark.dev/public/endpoints/transactions/#create-a-transaction)\)
 2. API Handler validates schema and sends transaction to the [TransactionProcessor](https://github.com/ArkEcosystem/core/blob/master/packages/core-transaction-pool/src/processor.ts)
-3. TransactionProcessor performs additional transaction payload checks in relation to the blockchain protocol. If all check are valid, transaction is added to the [TransactionPool](../terminology/terminology.md#transaction-pool)
+3. TransactionProcessor performs additional transaction payload checks in relation to the blockchain protocol. If all check are valid, transaction is added to the [TransactionPool](terminology.md#transaction-pool)
 
 {% hint style="success" %}
 All Client SDKs already create API requests to conform to this standard, so following the [SDK guidelines](https://sdk.ark.dev/guidelines/crypto/) will typically result in your transaction passing validation.
@@ -61,7 +61,7 @@ Internally, the `TransactionProcessor` processes transactions in its `validate` 
 At this point, Core Server has a list of incoming transactions to add to the transaction pool. TransactionProcessor now checks the pool to see whether it is at capacity. If so, it compares the incoming transactions against the pooled transactions and removes the transactions with the lowest fees.
 {% endhint %}
 
-[To Learn more about TransactionPool follow this link.](../terminology/terminology.md#transaction-pool)
+[To Learn more about TransactionPool follow this link.](terminology.md#transaction-pool)
 
 ### 3. From TransactionPool To Transaction Inclusion Within Blocks
 

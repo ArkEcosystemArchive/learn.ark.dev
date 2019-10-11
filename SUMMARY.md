@@ -18,19 +18,13 @@
 * [Transaction Types](concepts/transaction-types.md)
 * [Network Profiles](concepts/core-network-profiles.md)
 * [Core Run Modes](concepts/core-node-running-modes.md)
-
-## Additional Resources
-
-* [Deploy Your Own Chain](https://deployer.ark.io)
-* [Whitepaper](https://whitepaper.ark.io)
-* [Official ARK.io Website](https://ark.io)
-
-## Terminology
-
-* [Common Terms](terminology/terminology.md)
+* [Common Terms](concepts/terminology.md)
 
 ## Have a question?
 
+* [Official ARK.io Website](https://ark.io)
 * [Ask in our Public Slack](https://ark.io/slack)
 * [Go to our Developer Hub](https://ark.io/developers)
+* [Deploy Your Own Chain](https://deployer.ark.io)
+* [Whitepaper](https://whitepaper.ark.io)
 
