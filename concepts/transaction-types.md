@@ -10,7 +10,9 @@ description: >-
 
 This sections describes mainnet transaction types and its structure related to `serde` process \(serialization and deserialization of transactions\).
 
+{% hint style="info" %}
 Transactions are the heart of any blockchain, cryptocurrency or otherwise. They represent a transfer of value from one network participant to another. In ARK, transactions can be of one of multiple types, specified in AIP11, which can affect the content and data structure of each transaction's payload.
+{% endhint %}
 
 Using[ ARK SDKs](https://sdk.ark.dev), developers can employ the programming language of their choice to build applications utilizing the ARK blockchain. The ARK SDKs are split into two packages for each language: Client and Cryptography.
 
@@ -38,8 +40,7 @@ In the following sections basic transaction types and their structure is present
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 ### No VendorField
 
@@ -137,8 +138,7 @@ ff0217010000000000020000000000000003d59f3b7d698536f6925a77f22d484d518b06a2c09318
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -188,8 +188,7 @@ ff0217010000000100020000000000000002e0c063777427ac196af3c426fd648231ebc4ea06fff5
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -240,8 +239,7 @@ ff0217010000000200020000000000000002a574b8995542631976691a7f73b59e4700cd84badb83
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -292,8 +290,7 @@ ff0217010000000300020000000000000002555806bca6737eaeaff6434d5171bac8aeb72533ed9b
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP18](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-18.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -364,8 +361,7 @@ ff0217010000000400020000000000000003b593aa66b53525c5399b4af5a4f583dede1c2a46176c
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -423,8 +419,7 @@ ff02170100000005000200000000000000038e000c902d4551065ac5705637c685d52e6ac4032e15
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed Json Payload
 
@@ -615,8 +610,7 @@ ff0217010000000600020000000000000002a53371b23f991740f968e3d96de42a67b4242e267cad
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP11](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md), [AIP29](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-29.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -661,8 +655,7 @@ ff02170100000007000200000000000000037a12518205254e6ebf25290d9786fd9821c43bb7319c
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -721,8 +714,7 @@ ff02170100000008000200000000000000020d272fab67c179a9e4df4d006344d3ca47fb531b4246
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
@@ -774,8 +766,7 @@ ff02170100000009000300000000000000039d974aa6feff6a19fde69a8a8b25b991798e98252765
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP102](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-102.md) |
-| SDK Implementation Page | [Link](https://sdk.ark.dev/typescript/crypto/api-documentation/#crypto-transactions-builders-transactions-transaction) |
-| API Endpoints | [Link](https://api.ark.dev/public/endpoints/transactions/) |
+| API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 
 #### Signed JSON Payload
 
