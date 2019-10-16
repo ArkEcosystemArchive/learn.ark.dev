@@ -100,7 +100,7 @@ When deciding on which transactions to include in the block, the transaction poo
 
 All transactions are serialized and signed on client applications prior to submission to Core Server nodes. Every Crypto SDK includes functionality for serializing transactions from raw data into the binary transaction format supported across the ARK blockchain topology. Look for a `builder` module within your chosen SDK that contains methods to chain data onto the transaction type of your choice. To learn more about serialization and specific transaction types look into this document:
 
-{% page-ref page="transaction-types.md" %}
+{% page-ref page="transaction-types/" %}
 
 {% hint style="danger" %}
 No node will accept a transaction without a valid signature from a private key. Make sure you invoke the SDK builder's `sign` method on your transaction object using the sender's private key.

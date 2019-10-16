@@ -12,7 +12,7 @@ It is not an ERC-20 token, but is a platform built from ground up with speed, st
 
 The guidebook contains some technical references and in coding tutorials that might overwhelm beginners. ARK community developers and the ARK Team can be contacted on [slack](https://ark.io/slack). Do not hesitate to contact us, even if you feel the question is quite stupid and would inconvenience us. Also feel free to look into the key concepts explaining transaction types, cryptography and core server running modes \(links below and in the sidebar\).
 
-{% page-ref page="concepts/transaction-types.md" %}
+{% page-ref page="concepts/transaction-types/" %}
 
 {% page-ref page="concepts/cryptography.md" %}
 
