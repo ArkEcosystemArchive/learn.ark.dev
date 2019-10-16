@@ -4,7 +4,7 @@ description: IPFS Transaction Specifications
 
 # IPFS Transaction
 
-This transaction type utilizes a special data field similar to the vendor field to store Interplanetary File System data on the blockchain. This provides an easy way to timestamp and optionally encrypt and verify files. This implementation of the IPFS transaction type won’t allow storing data on the blockchain - for that, special IPFS nodes are needed
+This transaction type utilizes a special data field similar to the vendor field to store Interplanetary File System data on the blockchain. This provides an easy way to timestamp and optionally encrypt and verify files. This implementation of the IPFS transaction type won’t allow storing data on the blockchain - for that, special IPFS nodes are needed.
 
 | References |  |
 | :--- | :--- |
