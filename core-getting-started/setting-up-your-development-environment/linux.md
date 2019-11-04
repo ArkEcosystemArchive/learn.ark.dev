@@ -6,7 +6,9 @@ description: >-
 
 # Linux, macOS
 
-This guide will take you through the basic steps of setting up a development environment from scratch on a fresh Linux \(\*.deb based\) box.
+## Introduction
+
+This guide will take you through the basic steps of setting up a development environment from scratch on a fresh Linux \(\*.deb based\) box. We officially recommend and support **Ubuntu** operating system.
 
 {% hint style="success" %}
 If you don't have access to a Linux box you can quickly setup one on [DigitalOcean](https://cloud.digitalocean.com) by using this 50$ referral link: [https://m.do.co/c/09d061526b12](https://m.do.co/c/09d061526b12).
