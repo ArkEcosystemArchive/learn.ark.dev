@@ -10,6 +10,7 @@
   * [Docker on Linux, macOS](core-getting-started/setting-up-your-development-environment/docker.md)
   * [Docker on Windows](core-getting-started/setting-up-your-development-environment/windows.md)
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
+* [Setup Your Own Blockchain Explorer](core-getting-started/setup-local-blockchain-explorer.md)
 
 ## Key Concepts <a id="concepts"></a>
 
