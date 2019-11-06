@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-This short guide will help you setup a local blockchain explorer. This will enable you to browse and search your blockchain from a web application \(exactly the same as our official [Blockchain Explorer](https://explorer.ark.io)\).
+This short guide will help you setup a local blockchain explorer. This will enable you to browse and search your local Testnet \(or any other ARK based\) blockchain from a web application \(exactly the same as in our official [Blockchain Explorer](https://explorer.ark.io)\).
 
 ## STEP 1: Clone Official Explorer Repository
 
@@ -26,16 +26,20 @@ From the `explorer` root folder run`yarn install` command. This will build and i
 There are several run modes available for the Explorer package. You can run it as official Mainnet or Devnet explorer, or have it run as a simple local express server, it is up to your needs. 
 
 {% hint style="info" %}
-More detailed information about possible running modes can be found in the official [Explorer Readme Document.](https://github.com/ArkEcosystem/explorer/blob/develop/README.md)
+More detailed information about all possible running modes can be found in the official [Explorer Readme Document.](https://github.com/ArkEcosystem/explorer/blob/develop/README.md)
 {% endhint %}
 
-For the simple task of viewing and browsing of your local blockchain Testnet environment, all we need to do is run the following command from the Explorer root folder:
+For our simple task of viewing, browsing and searching the local Testnet blockchain, all we need to do is run the following command from the Explorer root folder:
 
-`yarn serve:testnet` // this command will start the Explorer in dev mode and it will search for a localhost core node, that should be running on `127.0.0.1:4003` by default configuration.
+```bash
+yarn serve:testnet
+```
 
-After running `yarn serve:testnet` command, you should see something the following:
+This command will start the Explorer in dev mode and it will search for a localhost core node, that should be running on `127.0.0.1:4003` by default.
 
-```text
+After running `yarn serve:testnet` command, you should see the following:
+
+```bash
 DONE  Compiled successfully in 11030ms    
 
 No type errors found
@@ -50,7 +54,7 @@ Time: 6973ms
   To create a production build, run yarn build.
 ```
 
-Head over to http://localhost:8080/ to view contents of local running blockchain with Testnet environment setup.
+Head over to [http://localhost:8080/](http://localhost:8080/) to view contents of local running blockchain with Testnet environment setup.
 
 
 
