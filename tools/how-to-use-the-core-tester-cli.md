@@ -172,7 +172,3 @@ We can also run `--help` command for any of the subcommands, for example `./bin/
 ./bin/run debug:identity --type="passphrase" --copy --data="enter vessel fashion moon relax inmate net spare game silk hello anger"
 ```
 
-## 
-
-
-
