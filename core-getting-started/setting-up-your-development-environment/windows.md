@@ -23,10 +23,11 @@ Follow your operating system instructions and install:
 
 Once you installed [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install) you'll have to configure _**Shared Drives**_ so your Linux container can mount ARK Core repository cloned locally on your Windows system. Make sure your **firewall** and **antivirus** are turned off or configured to allow the above operation. Follow [Docker Documentation](https://docs.docker.com/docker-for-windows/) - section _Shared Drives_.
 
-### Step 2.2: Setup Line Endings Formatting
+### Step 2.2: Setup Line Endings Style
 
 {% hint style="danger" %}
-**IMPORTANT!** To avoid Windows and Unix format end of lines mess [EOL](https://en.wikipedia.org/wiki/Newline). Prior to cloning ARK Core repository, enter the following code in your command prompt or PowerShell:
+**IMPORTANT!** To avoid Windows and Unix format end of lines mess [EOL](https://en.wikipedia.org/wiki/Newline).   
+Prior to cloning ARK Core repository, enter the following code in your command prompt or PowerShell:
 
 ```bash
 git config --global core.eol lf
@@ -42,7 +43,7 @@ Unless your IDE has a special setting to preserve Unix format EOL, every file yo
 
 ## Step 3: Clone ARK Core Repository
 
-Clone official [ARK Core](https://github.com/ArkEcosystem/core.git) repository. Recommended branch to use for development is `develop`. Our example uses `D:\core` as a PATH, so if you do not want to edit `docker-compose.yml`, you just go ahead and clone [ARK Core](https://github.com/ArkEcosystem/core.git) to the same path.
+Clone official [ARK Core](https://github.com/ArkEcosystem/core.git) repository. Recommended branch to use for development is `develop`. Our example uses `D:\core` as a PATH where we checkout the core repo, so if you do not want to edit `docker-compose.yml`, you just go ahead and clone [ARK Core](https://github.com/ArkEcosystem/core.git) to the same path.
 
 ```bash
 cd d:\
@@ -53,7 +54,7 @@ git checkout develop
 
 ## Step 4: Running Your Container
 
-### Step 4.1: Clone [core-docker](https://github.com/ArkEcosystem/core-docker.git) Repository
+### Step 4.1: Clone [Core-Docker](https://github.com/ArkEcosystem/core-docker.git) Repository
 
 ```bash
 cd d:\
