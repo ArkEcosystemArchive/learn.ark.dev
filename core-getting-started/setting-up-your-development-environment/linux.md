@@ -147,8 +147,8 @@ The commands above install PostgreSQL database locally and create databases for 
 
 First create user ARK with default password `password`. This will make it easier for us to work with default settings.
 
-{% code-tabs %}
-{% code-tabs-item title="create-user.sh" %}
+{% tabs %}
+{% tab title="create-user.sh" %}
 ```bash
 #!/usr/bin/env bash
 sudo adduser ark
@@ -157,8 +157,8 @@ sudo usermod -aG sudo ark
 # login as ark user
 sudo su - ark
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 After creating and logging under `ark` user, you can execute the following script to install development tools and dependencies from [Technology Stack](../../technology-stack.md). If your default user isn't `ark`, you should copy and modify the script source below \(database section\).
 
@@ -166,8 +166,8 @@ After creating and logging under `ark` user, you can execute the following scrip
 bash <(curl -s https://raw.githubusercontent.com/kristjank/tutorials/master/scripts/dev-setup.sh)
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="dev-setup.sh" %}
+{% tabs %}
+{% tab title="dev-setup.sh" %}
 ```bash
 #!/usr/bin/env bash
 sudo apt-get install -y git curl apt-transport-https update-notifier
@@ -190,8 +190,8 @@ sudo -i -u postgres psql -c "CREATE USER ark  WITH PASSWORD 'password' CREATEDB;
 sudo -i -u postgres psql -c "CREATE DATABASE ark_testnet WITH OWNER ark;"
 sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## Start Core and Play With Public API
 

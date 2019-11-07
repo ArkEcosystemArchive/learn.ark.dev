@@ -12,6 +12,10 @@
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 * [Setup Your Own Blockchain Explorer](core-getting-started/setup-local-blockchain-explorer.md)
 
+## Tools
+
+* [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
+
 ## Key Concepts <a id="concepts"></a>
 
 * [Understanding The Transaction Lifecycle](concepts/transaction-lifecycle.md)
