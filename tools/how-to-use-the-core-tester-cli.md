@@ -109,7 +109,7 @@ Make commands enables us to create new wallets/identities or blocks.  For more i
 After running, we can see the following console output:
 
 ```text
-Make new identities or Blocks
+Make new identities or blocks
 
 USAGE
   $ ark-tester make:COMMAND
@@ -125,11 +125,13 @@ All of the `make` commands have a subset of options. To explore more around them
 
 ```bash
 # Block generation examples
+# --------------------------
 ./bin/run make:block
 ./bin/run make:block --previousBlock="{"height": 50, "id": "123", "idHex": "7b"}"
 ./bin/run make:block --transactions=5
 
 # Wallet generation examples
+# --------------------------
 ./bin/run make:wallets
 ./bin/run make:wallets --quantity=1
 ./bin/run make:wallets --quantity=1 --copy
