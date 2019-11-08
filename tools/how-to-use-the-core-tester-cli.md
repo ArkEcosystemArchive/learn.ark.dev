@@ -6,46 +6,42 @@ description: >-
 
 # Using The Core-Tester-CLI
 
-Core-Tester-CLI  is a plugin that was developed to help create, send and debug official supported transaction types and blocks from the CLI. The plugin can be found in the [official ARK Core repository](https://github.com/arkecosystem/core). To send one or more transactions, you simply run the commands and adjust the parameters. By default the Tester-CLI is predefined to work with local Testnet environment \(identities, delegates, passwords and a default connection to a localhost Core node\). Default options can be changed, by using the correct CLI command parameters \(use `--help` command to learn more\).
+Core-Tester-CLI  is a plugin that was developed to help create, send and debug official supported transaction types and blocks from the CLI. The plugin can be found in the [official ARK Core repository](https://github.com/arkecosystem/core). To send one or more transactions, you simply run the commands and adjust the parameters. By default the Tester-CLI is predefined to work with local Testnet environment \(identities, delegates, passwords and a default connection to a localhost Core node running Testnet network\).
 
 {% hint style="info" %}
-The CLI interface can also be used to build and send transactions to public networks, by specifying node ip \(**--host\)** and port \(**--portAPI**\) parameters. See the examples under each command documentation.
+ Default options can be changed, by using the correct CLI command parameters \(use `--help` command to learn more\). The CLI interface can also be used to build and send transactions to public networks, by specifying node ip \(**--host\)** and port \(**--portAPI**\) parameters. See the examples under each commands documentation.
 {% endhint %}
 
 In the next sections we will learn more about the basic commands of the Tester-CLI.
 
 ## Prerequisites
 
-Make sure your development environment is setup and built `yarn setup`and that your local Testnet is running \(`yarn full:testnet`\). For instructions how to do this follow this link:
+Make sure your development environment is setup and built with `yarn setup`and that your local Testnet is running with `yarn full:testnet.`For instructions how to do this follow this link:
 
 {% page-ref page="../core-getting-started/spinning-up-your-first-testnet.md" %}
 
 ## Tester-CLI Commands
 
-Let's jump over to the `core-tester-cli` folder inside the ARK Core repository. The plugin can be found in the `core/packages/core-tester-cli` folder. Tester-CLI has four basic commands available:
+Let's jump to the `core-tester-cli` inside the ARK Core repository. The plugin can be found in the `core/packages/core-tester-cli` folder. Tester-CLI has four basic commands available:
 
-* help - display detailed help information about a specific command
-* debug - debug blocks and transactions and identities
-* send - create and send transactions
-* make - create wallets/identities and blocks
+* **help** - display detailed help information about a specific command
+* **debug** - debug blocks and transactions and identities
+* **send** - create and send transactions
+* **make** - create wallets/identities and blocks
 
-Let's look at each command and their options in the next sections.
+Let's look at each command and their options.
 
 ### 1. Help Command
 
-We will learn the help command first, as it is a very important tool that enables us to learn the next commands. We will execute the `help` and the `core-tester-cli` command in the following way:
+We will learn the help command first, as it is a very important tool that enables us to learn the next commands. We will execute the `help` command with the `core-tester-cli` in the following way:
 
 `./bin/run --help`
 
 This will display the initial help screen and list all the possible available commands.
 
 {% hint style="info" %}
-To learn more about a specific command or subcommand we can use the command name combined with the **--help** parameter. 
+To learn more about a specific command or subcommand we can use the command name combined with the **--help** parameter. For example, to display more information about the `send:transfer` command we can run $&gt;**./bin/run send:transfer --help**
 {% endhint %}
-
-For example, to display more information about the `send:transfer` command we can run:
-
-`./bin/run send:transfer --help`
 
 This will display more detailed information about the specific command and what parameters are available. 
 
@@ -64,7 +60,7 @@ Now, that you are familiar with the `help` command and its usage, let's take a l
 
 ### 2. Send Command
 
-The send commands enables us to create and send transactions of various types to a core node of our choosing. By default this is a local Testnet node, but we can specify other nodes by setting the `--host` and `--portAPI` parameter. For mode information about the `send` command run the following:
+The send commands enables us to create and send transactions of various types to a core node of our choosing. By default this is a local Testnet node, but we can specify other nodes by setting the `--host` and `--portAPI` parameter. For more information about the `send` command run the following:
 
 `./bin/run --help send`
 
@@ -91,7 +87,7 @@ COMMANDS
 
 All of the `send` commands have a subset of options. To explore more around them, please check `--help` for each of the subcommands.
 
-{% hint style="info" %}
+{% hint style="danger" %}
 By default all **send** commands have probing enabled. This means that we check if the wallet exists and if funds where received. To skip probing  use the **--skipProbing** option. 
 {% endhint %}
 
@@ -106,7 +102,7 @@ By default all **send** commands have probing enabled. This means that we check 
 
 ### 2. Make Command
 
-Make commands enables us to create new wallets/identities or blocks.  For mode information about the `make` command and the possible parameters run the following:
+Make commands enables us to create new wallets/identities or blocks.  For more information about the `make` command and the possible parameters run the following:
 
 `./bin/run --help` make  
   
@@ -142,7 +138,7 @@ All of the `make` commands have a subset of options. To explore more around them
 
 ### 3. Debug Command
 
-This command is used to debug raw blocks and transactions. It gives us options to serialize/deserialize raw data, to extract identities from the input and also execute basic crypto verification \(signature validation\). For mode information about the `debug` command run the following command:
+This command is used to debug raw blocks and transactions. It also gives us options to serialize/deserialize raw data from defined HEX payloads, extract identities the input and perform basic crypto verification \(signature validation\). For more information about the `debug` command run the following:
 
 `./bin/run --help debug`
 
