@@ -100,7 +100,7 @@ By default all **send** commands have probing enabled. This means that we check 
 ./bin/run send:transfer --skipProbing --recipient="AH8nsXJzfakM7xvTVCFpFGYUha7qNHnZLy" --passphrase="measure blue volcano month orphan only cupboard found laugh peasant drama monitor" --number=2
 ```
 
-### 2. Make Command
+### 3. Make Command
 
 Make commands enables us to create new wallets/identities or blocks.  For more information about the `make` command and the possible parameters run the following:
 
@@ -138,7 +138,7 @@ All of the `make` commands have a subset of options. To explore more around them
 ./bin/run make:wallets --quantity=1 --write
 ```
 
-### 3. Debug Command
+### 4. Debug Command
 
 This command is used to debug raw blocks and transactions. It also gives us options to serialize/deserialize raw data from defined HEX payloads, extract identities the input and perform basic crypto verification \(signature validation\). For more information about the `debug` command run the following:
 
