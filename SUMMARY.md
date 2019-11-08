@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome To The ARK Learning Hub](README.md)
+* [Welcome To ARK Learning Hub](README.md)
 * [Technology Stack](technology-stack.md)
 
 ## Getting Started With Core <a id="core-getting-started"></a>

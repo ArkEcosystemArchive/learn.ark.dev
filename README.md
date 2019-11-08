@@ -2,7 +2,7 @@
 description: Developer Guides And Tutorials Supported with Key Blockchain Mechanics
 ---
 
-# Welcome To The ARK Learning Hub
+# Welcome To ARK Learning Hub
 
 ## Purpose
 
