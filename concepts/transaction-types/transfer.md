@@ -12,7 +12,7 @@ The transfer transaction enables a user to broadcast a transaction to the networ
 | API Endpoints | [Link](https://api.ark.dev/public-rest-api/endpoints/transactions) |
 | AJV Schema | [Base](https://github.com/ArkEcosystem/core/blob/master/packages/crypto/src/transactions/types/schemas.ts#L16) \| [Transfer](https://github.com/ArkEcosystem/core/blob/master/packages/crypto/src/transactions/types/schemas.ts#L59) |
 
-## Schnorr (v2 Transaction Default)
+## Schnorr \(v2 Transaction Default\)
 
 ### Schnorr Transaction Structure
 
@@ -379,16 +379,4 @@ ff02170100000000000000000000000000034151a3ec46b5670a682b0a63394f863587d1bc97483b
 | **RecipientId:** | **\[90\]** | **21** | `0x170995750207ecaf0ccf251c1265b92ad84f553662` |
 | **Signature:** | **\[111\]** | **70** | `0x304402201ad3dd5a5e05ca81973c32473d244932b0f10b47f3db9539b414f5d35c8c97ef02206193066ce28b590bbeca94505e72194b86a45cde83045a50942e8ca9af90c128` |
 | **Second Signature:** | **\[181\]** | **70** | `0x304402206ac723312f100d2712326ea33f929184b64d5da0fcb7f7f4cb594726b2488bd8022046995d2d3fcfcf681f6f95126897858ad367626dc46c4d56afcac7268f16e3df` |
-
-<!-- {
-    "data": {
-        "privateKey": "d8839c2432bfd0a67ef10a804ba991eabba19f154a3d707917681d45822a5712",
-        "publicKey": "034151a3ec46b5670a682b0a63394f863587d1bc97483b1b6c70eb58e7f0aed192",
-        "address": "AGeYmgbg2LgGxRW2vNNJvQ88PknEJsYizC",
-        "wif": "SGq4xLgZKCGxs7bjmwnBrWcT4C1ADFEermj846KC97FSv1WFD1dA"
-    },
-    "passphrase": "this is a top secret passphrase"
-} -->
-
-## 
 

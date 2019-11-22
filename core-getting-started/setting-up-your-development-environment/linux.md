@@ -147,8 +147,7 @@ The commands above install PostgreSQL database locally and create databases for 
 
 First create user ARK with default password `password`. This will make it easier for us to work with default settings.
 
-{% tabs %}
-{% tab title="create-user.sh" %}
+{% code title="create-user.sh" %}
 ```bash
 #!/usr/bin/env bash
 sudo adduser ark
@@ -157,8 +156,7 @@ sudo usermod -aG sudo ark
 # login as ark user
 sudo su - ark
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 After creating and logging under `ark` user, you can execute the following script to install development tools and dependencies from [Technology Stack](../../technology-stack.md). If your default user isn't `ark`, you should copy and modify the script source below \(database section\).
 
@@ -166,8 +164,7 @@ After creating and logging under `ark` user, you can execute the following scrip
 bash <(curl -s https://raw.githubusercontent.com/kristjank/tutorials/master/scripts/dev-setup.sh)
 ```
 
-{% tabs %}
-{% tab title="dev-setup.sh" %}
+{% code title="dev-setup.sh" %}
 ```bash
 #!/usr/bin/env bash
 sudo apt-get install -y git curl apt-transport-https update-notifier
@@ -190,8 +187,7 @@ sudo -i -u postgres psql -c "CREATE USER ark  WITH PASSWORD 'password' CREATEDB;
 sudo -i -u postgres psql -c "CREATE DATABASE ark_testnet WITH OWNER ark;"
 sudo -i -u postgres psql -c "CREATE DATABASE ark_devnet WITH OWNER ark;"
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ## Start Core and Play With Public API
 
