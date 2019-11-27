@@ -16,6 +16,12 @@
 
 * [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
 
+## Explorer
+
+* [Branding](explorer/branding.md)
+* [Custom Transactions](explorer/custom-transactions.md)
+* [Running your own explorer](explorer/running-your-own-explorer.md)
+
 ## Key Concepts <a id="concepts"></a>
 
 * [Understanding The Transaction Lifecycle](concepts/transaction-lifecycle.md)
