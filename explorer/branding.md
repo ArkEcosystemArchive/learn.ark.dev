@@ -1,4 +1,4 @@
-# Branding
+# How To Set Custom Branding
 
 This document will explain the files that you might have to adjust to have the Explorer work with your custom chain and have it displayed in your own brand colors.
 

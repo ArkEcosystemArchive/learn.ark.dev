@@ -1,4 +1,4 @@
-# Custom Transactions
+# How To Add New Transactions Types
 
 By default the ARK Explorer will work with new transaction types by treating them like transfers \(type 0\). This may not be the correct way to fully utilize the properties your new transaction type has, so lets take a look at the components that are involved.
 

@@ -16,11 +16,11 @@
 
 * [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
 
-## Explorer
+## Blockchain Explorer <a id="explorer"></a>
 
-* [Branding](explorer/branding.md)
-* [Custom Transactions](explorer/custom-transactions.md)
-* [Running your own explorer](explorer/running-your-own-explorer.md)
+* [How To Set Custom Branding](explorer/branding.md)
+* [How To Add New Transactions Types](explorer/custom-transactions.md)
+* [How To Run Your Own Blockchain Explorer](explorer/running-your-own-explorer.md)
 
 ## Key Concepts <a id="concepts"></a>
 
