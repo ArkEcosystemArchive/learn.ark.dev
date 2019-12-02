@@ -30,7 +30,7 @@ From the `explorer` root folder run`yarn install` command. This will build and i
 There are several run modes available for the Explorer package. You can run it as official Mainnet or Devnet explorer, or have it run as a simple local express server, it is up to your needs. 
 
 {% hint style="info" %}
-More detailed information about all possible running modes can be found in the official [Explorer Readme Document.](https://github.com/ArkEcosystem/explorer/blob/develop/README.md)
+More detailed information about all possible running modes can be found in the [Blockchain Explorer](../explorer/running-your-own-explorer.md) section.
 {% endhint %}
 
 For our simple task of viewing, browsing and searching the local Testnet blockchain, all we need to do is run the following command from the Explorer root folder:
