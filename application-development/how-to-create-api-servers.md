@@ -15,7 +15,7 @@ To create a new module from a template follow this simple guide:
 After you have created the module and adjusted basic properties \(name, structure, dependencies\) we can start to add custom functionalities, like **adding a HTTP server.**
 
 {% hint style="info" %}
-**You can use our template project with HTTP server implementation already done**. Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-template](https://github.com/learn-ark/dapp-core-module-http-server-template) **** and create a new module from it.
+**You can use our template project with HTTP server implementation already done**. Head over to [https://github.com/learn-ark/dapp-core-module-http-server-template](https://github.com/learn-ark/dapp-core-module-http-server-template) **** and create a new module from it.
 {% endhint %}
 
 Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration as defined in Step 3 below.
