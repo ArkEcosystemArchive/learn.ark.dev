@@ -20,7 +20,7 @@ After you have created the module and adjusted basic properties \(name, structur
 
 Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration as defined in Step 3 below.
 
-Steps 1 and 2 are basic explanation of needed packages and implementation decision to make the HTTP server working in line with the ARK Core best practices.
+**Steps 1 and 2** are basic explanation of needed packages and implementation decisions to make the HTTP server working in line with the ARK Core best practices.
 
 ## Step 1: Adding core-http-utils Dependency <a id="installing-dependencies"></a>
 
@@ -162,41 +162,11 @@ Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-templat
 
 ## Step 3: Load The Module Within Network Configuration <a id="creating-our-server"></a>
 
-This is explain in more details here:
+We already learned how to load the new module within selected network configuration. All we have to do is edit the `plugin.js` file and add our new module name to the list. 
 
-{% page-ref page="how-to-write-core-modules/" %}
+**Go here for detailed explanation on how to achieve this:** [https://app.gitbook.com/@ark/s/tutorials/application-development/how-to-write-core-modules/setting-up-your-first-module\#step-2-module-registration-within-network-configuration](https://app.gitbook.com/@ark/s/tutorials/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration).
 
-We will enable our dApp `@vendorname/dappname`  in the Testnet network configuration. dApp name is taken from node package name as defined in package.json. You can change it to your needs.
+**Now Start You Local Testnet Blockchain with the new module enabled by following this guide:**
 
-Go to: `core/packages/core/bin/testnet`
-
-```text
-cd packages/core/bin/config/testnet
-```
-
-Locate the file `plugins.js`. We will add our dApp name to end of the list of the loaded plugins. This means that core will pickup the dapp and load it for a specific network configuration.
-
-Add line `@learn-ark/dapp-custom-module-nam: {}:` to the end of the `plugins.js` file, so it looks something like this:
-
-```javascript
-"@arkecosystem/core-exchange-json-rpc": {
-        enabled: process.env.CORE_EXCHANGE_JSON_RPC_ENABLED,
-        host: process.env.CORE_EXCHANGE_JSON_RPC_HOST || "0.0.0.0",
-        port: process.env.CORE_EXCHANGE_JSON_RPC_PORT || 8080,
-        allowRemote: false,
-        whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
-    },
-"@arkecosystem/core-snapshots": {},
-//our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
-"@learn-ark/dapp-core-module-http-server-template": {}, 
-
-```
-
-{% hint style="info" %}
-Make sure to run yarn setup from the core root folder when you change or add code to **core/plugins.**
-{% endhint %}
-
-Now Start You Local Testnet Blockchain by following this guide:
-
-{% page-ref page="../core-getting-started/spinning-up-your-first-testnet.md" %}
+[https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module\#step-3-running-your-dapp](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp).
 
