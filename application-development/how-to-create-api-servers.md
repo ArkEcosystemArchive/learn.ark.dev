@@ -208,11 +208,11 @@ By using this approach it is much easier to split and manage your API code. Also
 
 We already learned how to load the new module within selected network configuration. All we have to do is edit the `plugin.js` file and add our new module name to the list. 
 
-### **Step 3.1: Load the new module in plugins.js**
+### **Step 3.1: Load The New Module from plugins.js**
 
 Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this. ****
 
-### **Step 3.2: Start you local Testnet**
+### **Step 3.2: Start Your Local Testnet // Run Your dApp**
 
 Now Start You Local Testnet Blockchain with the new module enabled by following [this guide](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp)!
 
