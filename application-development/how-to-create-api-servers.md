@@ -6,7 +6,7 @@ A common use-case for a module is that you process some data from within core an
 Core provides a package called [core-http-utils](https://github.com/ARKEcosystem/core/tree/develop/packages/core-http-utils/src) which provides everything you will need to run an HTTP server with modules. Core uses [hapi](https://hapijs.com/) for all its HTTP based services as it enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
 {% endhint %}
 
-## Step 0: New Module Setup <a id="installing-dependencies"></a>
+## Step 0: New Module From A Template <a id="installing-dependencies"></a>
 
 To create a new module from a template follow this simple guide:
 
