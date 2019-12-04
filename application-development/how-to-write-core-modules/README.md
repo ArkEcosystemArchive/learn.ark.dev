@@ -16,17 +16,18 @@ Everything you will built will be packaged as a core module. That will also enab
 
 {% page-ref page="setting-up-your-first-module.md" %}
 
-## Reusable Core dApp Module Templates
+## Reusable dApp Core Module Templates
 
 We provide module templates, that enable you to skip the boilerplate code generation and give you an implementation head start. The following templates are available:
 
-{% embed url="https://github.com/learn-ark/dapp-core-module-template" caption="Basic dApp Core Module Template" %}
+{% embed url="https://github.com/learn-ark/dapp-core-module-template" caption="Reusable dApp Empty Core Module Template" %}
 
-{% embed url="https://github.com/learn-ark/dapp-core-module-http-server-template" caption="Core Module Template with HTTP Server Implemented" %}
+{% embed url="https://github.com/learn-ark/dapp-core-module-http-server-template" caption="Reusable dApp Core Module Template With Implemented HTTP Server" %}
 
-{% embed url="https://github.com/learn-ark/dapp-core-module-gti-template" caption="Core Module Template With Custom Transaction Implementation Skeleton" %}
+{% embed url="https://github.com/learn-ark/dapp-core-module-gti-template" caption="Reusable dApp Core Module Template With Custom Transaction Implementation Skeleton" %}
 
 {% hint style="info" %}
-Every template is based on the Basic Core Module Template with additional implementation. **You can add ANY kind of programming logic to your module implementation.**
+Every template is based on the Basic dApp Core Module Template with additional implementation.   
+**You can add ANY kind of programming logic to your module implementation, like databases, new API endpoints, voting, oracles...**
 {% endhint %}
 
