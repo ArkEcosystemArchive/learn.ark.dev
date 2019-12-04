@@ -10,6 +10,10 @@ Modules are very simple to write. At their core they are an object with a regist
 Everything we use inside ARK core is built with modules. To learn more about modules and their structure follow the source code of existing modules within core. 
 {% endhint %}
 
+{% hint style="info" %}
+GitHub learning repository has [a template project available](https://github.com/learn-ark/dapp-core-module-template). You can create a new module by creating [a new GitHub repository ](https://github.com/new)and selecting the correct template: **learn-ark/dapp-core-module-template.**
+{% endhint %}
+
 ### Available Module Properties
 
 This properties are set in the `plugin.ts` file in the root folder of you core module. 
