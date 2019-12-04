@@ -16,7 +16,9 @@ Everything you will built will be packaged as a core module. That will also enab
 
 {% page-ref page="setting-up-your-first-module.md" %}
 
-We also provide module templates, that skip the boilerplate code generation and give you an implementation head start. The following templates are available:
+## Reusable dApp Module Templates
+
+We provide module templates, that enable you to skip the boilerplate code generation and give you an implementation head start. The following templates are available:
 
 {% embed url="https://github.com/learn-ark/dapp-core-module-template" caption="Basic dApp Core Module Template" %}
 
