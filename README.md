@@ -30,7 +30,15 @@ The guidebook contains some technical references and in coding tutorials that mi
 
 {% page-ref page="concepts/transaction-lifecycle.md" %}
 
+## Developer Guides And Tutorials
+
 Enough theory \(for now :-\)\), let's go and setup our development environment and finally start coding your next awesome project.
 
 {% page-ref page="core-getting-started/setting-up-your-development-environment/" %}
+
+{% page-ref page="application-development/how-to-write-core-modules/" %}
+
+{% page-ref page="application-development/how-to-create-api-servers.md" %}
+
+
 
