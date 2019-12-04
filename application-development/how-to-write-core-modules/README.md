@@ -20,7 +20,7 @@ We also provide module templates, that skip the boilerplate code generation and 
 
 1. [Basic Core Module Template](https://github.com/learn-ark/dapp-core-module-template)
 2. [Core Module Template With HTTP Server Implemented](https://github.com/learn-ark/dapp-core-module-http-server-template)
-3. [Core Module Template With Blockchain Interaction Services](https://github.com/learn-ark/dapp-core-module-http-server-template) \(base-service.ts\)
+3. [Core Module Template With Blockchain Interaction Services](https://github.com/learn-ark/dapp-core-module-http-server-template)
 
 {% hint style="info" %}
 Every template is based on the Basic Core Module Template with additional implementation. **You can add ANY kind of programming logic to your module implementation.**
