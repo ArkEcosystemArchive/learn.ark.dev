@@ -54,7 +54,7 @@ await Server.registerRoutes("HTTP", this.http);
 await mountServer(`Custom HTTP Public ${name.toUpperCase()} API`, server);
 ```
 
-Here is the whole `server.ts` file that handles the creation and mounting logic and `plugin.ts` that starts/stops the HTTP server. Looking at the tabs below, you can see the full implementation of the custom HTTP server logic and how it relates to the overall dApp creation module logic. Also note the `registerRoutes` method where you can custom routes.
+Below is the whole `server.ts` file that handles the creation and mounting logic and `plugin.ts` that starts/stops the HTTP server. Looking at the tabs, you can see the full implementation of the custom HTTP server logic and how it relates to the overall dApp creation module logic. Also note the `registerRoutes` method where you can custom routes.
 
 {% tabs %}
 {% tab title="plugin.ts" %}
@@ -160,6 +160,8 @@ export class Server {
 Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-template](https://github.com/learn-ark/dapp-core-module-http-server-template) and create a new module. Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration.
 {% endhint %}
 
+### **Route Handlers And Best Practices**
+
 Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers as an example on how to achieve this. For example we register a route in the `server.ts` with this line:
 
 ```typescript
@@ -200,15 +202,17 @@ export const config = {
 };
 ```
 
-By using this approach it is much easier to split and manage your API code. Also check our official `core-api` plugin to learn more about our API.
+By using this approach it is much easier to split and manage your API code. Also check our official `core-api` plugin to learn more about our API and best practices.
 
 ## Step 3: Load The Module Within Network Configuration <a id="creating-our-server"></a>
 
 We already learned how to load the new module within selected network configuration. All we have to do is edit the `plugin.js` file and add our new module name to the list. 
 
-**3.1 Load the new module in plugins.js**  
-Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this.
+### **Step 3.1: Load the new module in plugins.js**
 
-**3.1 Start you local Testnet**  
+Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this. ****
+
+### **Step 3.2: Start you local Testnet**
+
 Now Start You Local Testnet Blockchain with the new module enabled by following [this guide](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp)!
 
