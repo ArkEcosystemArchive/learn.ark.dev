@@ -12,6 +12,13 @@
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 * [Setup Your Own Blockchain Explorer](core-getting-started/setup-local-blockchain-explorer.md)
 
+## Application Development
+
+* [How To Write Core Modules](application-development/how-to-write-core-modules/README.md)
+  * [Basic Module Structure](application-development/how-to-write-core-modules/basic-structure-and-properties.md)
+  * [Creating Your First Core Module](application-development/how-to-write-core-modules/setting-up-your-first-module.md)
+* [How To Create API Servers](application-development/how-to-create-api-servers.md)
+
 ## Tools
 
 * [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
@@ -20,7 +27,7 @@
 
 * [How To Set Custom Branding](explorer/branding.md)
 * [How To Add New Transactions Types](explorer/custom-transactions.md)
-* [How To Run Your Own Blockchain Explorer](explorer/running-your-own-explorer.md)
+* [How To Deploy The Blockchain Explorer](explorer/running-your-own-explorer.md)
 
 ## Key Concepts <a id="concepts"></a>
 

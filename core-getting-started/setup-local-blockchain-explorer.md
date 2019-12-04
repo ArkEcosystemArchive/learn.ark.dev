@@ -8,11 +8,15 @@ description: >-
 
 ## Introduction
 
-This short guide will help you setup a local blockchain explorer. This will enable you to browse and search your local Testnet \(or any other ARK based\) blockchain from a web application \(exactly the same as in our official [Blockchain Explorer](https://explorer.ark.io)\).
+This short guide will help you setup a local blockchain explorer. This will enable you to browse and search your **local Testnet** \(or any other ARK based\) blockchain from a web application \(exactly the same as in our official [Blockchain Explorer](https://explorer.ark.io)\).
 
 {% hint style="info" %}
-Blockchain Explorer communicates with the local Core node via the [Public REST API interface](https://api.ark.dev), so make sure it is enabled \(default value is **enabled**\).
+Blockchain Explorer communicates with the local Core node via the [Public REST API interface](https://api.ark.dev), so make sure it is enabled \(default value is **enabled**\). 
 {% endhint %}
+
+For **production** deployment and customisation options head over here:
+
+{% page-ref page="../explorer/running-your-own-explorer.md" %}
 
 ## STEP 1: Clone Official Explorer Repository
 
@@ -59,6 +63,4 @@ Time: 6973ms
 ```
 
 Head over to [http://localhost:8080/](http://localhost:8080/) to view contents of local running blockchain with Testnet environment setup.
-
-
 
