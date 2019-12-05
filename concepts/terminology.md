@@ -21,6 +21,47 @@ Blocks hold quite a lot of metadata on the ARK blockchain, like:
 * Total transfer amount.
 * Total fee amount.
 
+Try running the following command to retrieve block information from our public blockchain network:
+
+```bash
+curl --request GET --url https://explorer.ark.io/api/blocks/bd83624b2046ea9046c351ea630802999f968861954438e1acb784d24f4bfcbf
+```
+
+The result is JSON with block data:
+
+```typescript
+  "data": {
+    "id": "3f3c6bfaf5daa59c5153ee57b128787a8053f54c692890e82f321e3d4e593bef",
+    "version": 0,
+    "height": 4159396,
+    "previous": "07218d0f41add6216dc6c901a9bea72bdfa042342a42806dcfa63236a1a0c625",
+    "forged": {
+      "reward": "200000000",
+      "fee": "0",
+      "total": "200000000",
+      "amount": "0"
+    },
+    "payload": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "length": 0
+    },
+    "generator": {
+      "username": "dark",
+      "address": "D9UbNsbCrnv2qjymoQjRC5pTLvdaiZ9XFx",
+      "publicKey": "027894c17a95ef401eb448895ba60051bb34f752bb49aef1e69831b5a5f0c6d44b"
+    },
+    "signature": "3045022100efa67bbefdc48e3d4f848343148127f5a167e528d55b5ba16726d98ed2b5c050022063aef1b89d846fece0b72f22e4accec1a9c20a5228ea932edcb80eaf7340196c",
+    "confirmations": 2,
+    "transactions": 0,
+    "timestamp": {
+      "epoch": 85439136,
+      "unix": 1575540336,
+      "human": "2019-12-05T10:05:36.000Z"
+    }
+  }
+}
+```
+
 These are a few examples of relevant information which blocks are required to hold for the network's stability.
 
 ## Delegate
