@@ -161,7 +161,7 @@ sudo su - ark
 After creating and logging under `ark` user, you can execute the following script to install development tools and dependencies from [Technology Stack](../../technology-stack.md). If your default user isn't `ark`, you should copy and modify the script source below \(database section\).
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kristjank/tutorials/master/scripts/dev-setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/arkecosystem/learn.ark.dev/master/scripts/dev-setup.sh)
 ```
 
 {% code title="dev-setup.sh" %}
