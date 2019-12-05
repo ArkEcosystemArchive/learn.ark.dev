@@ -27,7 +27,6 @@ We provide module templates, that enable you to skip the boilerplate code genera
 {% embed url="https://github.com/learn-ark/dapp-core-module-gti-template" caption="dApp Starter Template Project For Custom Transaction \(GTI\) Implementation" %}
 
 {% hint style="info" %}
-Every template is based on the Basic dApp Core Module Template with additional implementation.   
-**You can add ANY kind of programming logic to your module implementation, like databases, new API endpoints, voting, oracles...**
+Every template is based on the [dApp Starter Core Module Template ](https://github.com/learn-ark/dapp-core-module-template)with additional implementation. Use the templates as a functional skeleton project and continue adding and implementing your own logic \(API, additional database, voting, loyalty, defi...\).
 {% endhint %}
 
