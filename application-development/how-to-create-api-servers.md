@@ -166,7 +166,7 @@ export class Server {
 Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-template](https://github.com/learn-ark/dapp-core-module-http-server-template) and create a new module. Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration.
 {% endhint %}
 
-### **Route Handlers And Best Practices**
+### **Implementing Route Handlers**
 
 Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line:
 
