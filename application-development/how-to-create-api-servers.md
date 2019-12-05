@@ -214,7 +214,7 @@ By using this approach it is much easier to split and manage your API code. Also
 
 We already learned how to load the new module within selected network configuration. All we have to do is edit the `plugin.js` file and add our new module name to the list. 
 
-### **Step 3.1: Add The New Module The Network plugins.js file**
+### **Step 3.1: Add New Module To The Network plugins.js file**
 
 Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this. ****
 
