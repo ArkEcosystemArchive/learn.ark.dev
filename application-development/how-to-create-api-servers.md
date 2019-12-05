@@ -12,17 +12,15 @@ A common use-case for a module is that you process some data from within core an
 Core provides a package called [core-http-utils](https://github.com/ARKEcosystem/core/tree/develop/packages/core-http-utils/src) which provides everything you will need to run an HTTP server with modules. Core uses [hapi](https://hapijs.com/) for all its HTTP based services as it enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
 {% endhint %}
 
-## Step 0: New Module From A Template <a id="installing-dependencies"></a>
+## Step 0: Create A New Module From A Template <a id="installing-dependencies"></a>
 
 To create a new module from a template follow this simple guide:
 
 {% page-ref page="how-to-write-core-modules/setting-up-your-first-module.md" %}
 
-After you have created the module and adjusted basic properties \(name, structure, dependencies\) we can start to add custom functionalities, like **adding a HTTP server.**
+After you have created the module and adjusted basic properties \(name, structure, dependencies\) we can start to add custom functionalities, like **adding a HTTP server.** You can use our template project with HTTP server implementation already done  and create a new module from it.
 
-{% hint style="info" %}
-**You can use our template project with HTTP server implementation already done**. Head over to [https://github.com/learn-ark/dapp-core-module-http-server-template](https://github.com/learn-ark/dapp-core-module-http-server-template) **** and create a new module from it.
-{% endhint %}
+{% embed url="https://github.com/learn-ark/dapp-core-module-http-server-template" caption="You can use our template project with HTTP server implementation." %}
 
 Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration as defined in Step 3 below.
 
