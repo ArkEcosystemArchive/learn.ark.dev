@@ -1,7 +1,7 @@
 ---
 description: >-
-  Extend your blockchain with additional functionalities and build additional
-  micro-service stack on  top of it.
+  Extend your blockchain with additional functionalities and build micro-service
+  stack on  top of it.
 ---
 
 # How To Create API Servers
