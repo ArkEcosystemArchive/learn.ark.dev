@@ -16,7 +16,7 @@ Everything you will built will be packaged as a core module. That will also enab
 
 {% page-ref page="setting-up-your-first-module.md" %}
 
-## Reusable dApp Core Module Templates
+## Reusable dApp Starter Core Module Templates
 
 We provide module templates, that enable you to skip the boilerplate code generation and give you an implementation head start. The following templates are available:
 
