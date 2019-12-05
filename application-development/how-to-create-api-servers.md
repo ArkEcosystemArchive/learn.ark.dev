@@ -1,3 +1,9 @@
+---
+description: >-
+  Extend your blockchain with additional functionalities and build additional
+  micro-service stack on  top of it.
+---
+
 # How To Create API Servers
 
 A common use-case for a module is that you process some data from within core and want to make use of that data with an external application. The easiest way to do this is through an HTTP server that exposes an API from which you request the data.
@@ -162,14 +168,14 @@ Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-templat
 
 ### **Route Handlers And Best Practices**
 
-Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers as an example on how to achieve this. For example we register a route in the `server.ts` with this line:
+Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line:
 
 ```typescript
 // source: https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63
 server.route([{ method: "GET", path: "/config", ...handlers.config }]);
 ```
 
-The above route is implemented with a simple `handler.ts` file:
+The above registered route is implemented with a the following `handler.ts` file:
 
 ```typescript
 import { app } from "@arkecosystem/core-container";
@@ -208,11 +214,13 @@ By using this approach it is much easier to split and manage your API code. Also
 
 We already learned how to load the new module within selected network configuration. All we have to do is edit the `plugin.js` file and add our new module name to the list. 
 
-### **Step 3.1: Load The New Module from plugins.js**
+### **Step 3.1: Add The New Module The Network plugins.js file**
 
 Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this. ****
 
-### **Step 3.2: Start Your Local Testnet // Run Your dApp**
+### **Step 3.2: Run Your dApp**
 
-Now Start You Local Testnet Blockchain with the new module enabled by following [this guide](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp)!
+Your implemented dApp application leaves and works from the ARK Core blockhain node as an independent Core module.   
+  
+Now **Go And Start You Local Testnet** Blockchain with the new module enabled by following [this guide](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp)!
 
