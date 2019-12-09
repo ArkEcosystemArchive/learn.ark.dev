@@ -255,7 +255,7 @@ Looking at the source code from the template \(file [`server.ts`](https://github
 
 The default greeting endpoint was registered and implemented directly from the method in [server.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/server.ts#L55-L61).
 
-The configuration endpoint was registered from the [server.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63), but the implementation is in the [handlers.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/handlers.ts#L4-L28) file. We followed development best practices, so we have split the logic into route registrations and actual implementations. 
+The configuration endpoint was registered from the [server.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63), but the implementation is in the [handlers.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/handlers.ts#L4-L28) file. We have split the logic into route registrations and actual implementations. 
 
 {% hint style="success" %}
 You saw how easy it is to add new application/modules and register them on blockchain, making them available to everyone, secure and scalable by default - being powered by ARK Blockchain Core Platform. 
