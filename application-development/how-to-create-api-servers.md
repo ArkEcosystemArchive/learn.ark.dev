@@ -24,11 +24,17 @@ You can also ****use our template project with HTTP server implementation alread
 
 {% embed url="https://github.com/learn-ark/dapp-core-module-http-server-template" caption="You can use our template project with HTTP server implementation." %}
 
-Your new module will already have a running HTTP server implemented, so all you need to do is add your own routes and load the module in correct network configuration as defined in Step 3 below.
-
-**Steps 1 and 2** are basic explanation of needed packages and implementation decisions to make the HTTP server working in line with the ARK Core best practices.
+{% hint style="success" %}
+dApp Http Server Template already has a running HTTP server implemented. All you need to do is add your own routes and load the module in correct network configuration as defined in **Step 3** below. 
+{% endhint %}
 
 ## Step 1: Adding core-http-utils Dependency <a id="installing-dependencies"></a>
+
+{% hint style="info" %}
+If you used the dApp Http Server Module Template, the boilerplate HTTP Server implementation is already done. You can skip Step 1, 2 and **jump to Step 3** below.
+{% endhint %}
+
+**Steps 1 and 2** are basic explanation of needed packages and implementation decisions for the HTTP server module template we are using. This is a **recommended read** if you want to understand the basic server mechanics and how to add it to you existing modules.
 
 As you've learned in [How to write a Core Modules](how-to-write-core-modules/) you will need to install the required dependencies. For our example we will use we need the **core-http-utils** package which you can install with the following command:
 
