@@ -81,5 +81,7 @@ Your core server is now running and responding to your requests. Look at the [Pu
 3. [List All Transactions](https://api.ark.dev/public-rest-api/endpoints/transactions#list-all-transactions)
 4. [Explore more endpoints](https://api.ark.dev)
 
-In the next phase we will build a simple transaction using the `core-tester-cli` package and post it to the local network. 
+To **create a simple transaction and post it to the local running blockchain** look at the `core-tester-cli` package \(link below\):
+
+{% page-ref page="../tools/how-to-use-the-core-tester-cli.md" %}
 
