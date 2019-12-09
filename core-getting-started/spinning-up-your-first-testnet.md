@@ -81,7 +81,9 @@ Your core server is now running and responding to your requests. Look at the [Pu
 3. [List All Transactions](https://api.ark.dev/public-rest-api/endpoints/transactions#list-all-transactions)
 4. [Explore more endpoints](https://api.ark.dev)
 
-To **create a simple transaction and post it to the local running blockchain** use the `core-tester-cli` package \(link below\). **Core-Tester** provides set of instructions on how to run commands for creating and sending transactions across any ARK Core network from the CLI interface.
+{% hint style="info" %}
+To **create a simple transaction and post it to the local running blockchain** use the **core-tester-cli** package \(link below\). **Core-Tester** provides set of instructions on how to run commands for creating and sending transactions across any ARK Core network from the CLI interface.
+{% endhint %}
 
 {% page-ref page="../tools/how-to-use-the-core-tester-cli.md" %}
 
