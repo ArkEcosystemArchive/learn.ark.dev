@@ -43,7 +43,7 @@ lerna add @arkecosystem/core-http-utils --scope=@vendor/demo-plugin
 
 Now that `core-http-utils` is installed we can get started with starting our HTTP server, which is fairly simple.
 
-This example will register a server with a single endpoint at `http://localhost:5003/` where `localhost` is the host and `5003` the port. When you run `curl http://localhost:5003/` you should get `Hello World` as response.
+This example will register a server with a single endpoint at `http://localhost:5003/` where `localhost` is the host and `5003` the port. When you run `curl http://localhost:5003/` you should get **`Hello ARKies`** as response.
 
 To create our server we need to import the following packages from `core-http-utils`:
 
@@ -168,15 +168,16 @@ Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-templat
 
 ### **Implementing Route Handlers**
 
-Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line:
+Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line \(add this line to `registerRoutes` method: line 52 in file `server.ts` above, just before the `mountServer` call\):
 
 ```typescript
 // source: https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63
 server.route([{ method: "GET", path: "/config", ...handlers.config }]);
 ```
 
-The above registered route is implemented with a the following `handler.ts` file:
+The above registered route is implemented with in the  `handler.ts` file:
 
+{% code title="handler.ts" %}
 ```typescript
 import { app } from "@arkecosystem/core-container";
 import { Plugins } from "@arkecosystem/core-utils";
@@ -207,6 +208,7 @@ export const config = {
     },
 };
 ```
+{% endcode %}
 
 By using this approach it is much easier to split and manage your API code. Also check our official `core-api` plugin to learn more about our API and best practices.
 
