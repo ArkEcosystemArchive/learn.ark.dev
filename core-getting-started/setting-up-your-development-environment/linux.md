@@ -82,7 +82,11 @@ yarn setup  #run Lerna to clean, bootstrap and build the core packages
 
 ## Step 7: Setting Up The Development Database
 
-ARK Core stores all the blockchain data in a [PostgreSQL](https://www.postgresql.org/) database. You have two options on how to setup your development database. 
+ARK Core stores all the blockchain data in a [PostgreSQL](https://www.postgresql.org/) database. You have two options on how to setup your development database.
+
+{% hint style="info" %}
+Follow **Step 7.1** if you are working locally on your developer computer and have docker environment in place, otherwise follow **Step 7.2** \(for example if you are running on a cloud based Ubuntu instance or prefer native database install\).
+{% endhint %}
 
 ### Step 7.1 Database Setup Using Docker
 
