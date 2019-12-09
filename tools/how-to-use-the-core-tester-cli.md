@@ -9,7 +9,7 @@ description: >-
 Core-Tester-CLI  is a plugin that was developed to help create, send and debug official supported transaction types and blocks from the CLI. The plugin can be found in the [official ARK Core repository](https://github.com/arkecosystem/core). To send one or more transactions, you simply run the commands and adjust the parameters. By default the Tester-CLI is predefined to work with local Testnet environment \(identities, delegates, passwords and a default connection to a localhost Core node running Testnet network\).
 
 {% hint style="info" %}
- Default options can be changed, by using the correct CLI command parameters \(use `--help` command to learn more\). The CLI interface can also be used to build and send transactions to public networks, by specifying node ip \(**--host\)** and port \(**--portAPI**\) parameters. See the examples under each commands documentation.
+Default options can be changed, by using the correct CLI command parameters \(use `--help` command to learn more\). The CLI interface can also be used to build and send transactions to public networks, by specifying node ip \(**--host\)** and port \(**--portAPI**\) parameters. See the examples under each commands documentation.
 {% endhint %}
 
 In the next sections we will learn more about the basic commands of the Tester-CLI.
