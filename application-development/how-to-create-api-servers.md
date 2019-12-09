@@ -218,9 +218,42 @@ We already learned how to load the new module within selected network configurat
 
 Go [here](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-2-module-registration-within-network-configuration) for detailed explanation on how to achieve this. ****
 
-### **Step 3.2: Run Your dApp**
+### **Step 3.2: Start Your dApp**
 
 Your implemented dApp application leaves and works from the ARK Core blockhain node as an independent Core module.   
   
 Now **Go And Start You Local Testnet** Blockchain with the new module enabled by following [this guide](https://learn.ark.dev/application-development/how-to-write-core-modules/setting-up-your-first-module#step-3-running-your-dapp)!
+
+## Step 4: Test Your New API Server
+
+When Core is started you should see the dApp starting and enabling HTTP server messages in the `core.log`, similar to the display below:
+
+```bash
+... a lot of text
+[2019-12-09 08:59:31.680] INFO : Starting dApp
+[2019-12-09 08:59:31.685] INFO : Custom HTTP Public HTTP API Server running at: http://0.0.0.0:5003
+... a lot of text :)
+```
+
+{% hint style="success" %}
+**Congratulations!**   
+Your dApp was successfully loaded and custom HTTP Server is running and listening on port 5003.
+{% endhint %}
+
+Looking at the source code from the template \(file [`server.ts`](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/server.ts#L55-L63)\) we registered two endpoints:
+
+* [GET 0.0.0.0:5003/](http://127.0.0.1:5003)
+* [GET 0.0.0.0:5003/config](http://127.0.0.1:5003/config)
+
+The default greeting endpoint was registered and implemented directly from the method in [server.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/server.ts#L55-L61).
+
+The configuration endpoint was registered from the [server.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63), but the implementation is in the [handlers.ts](https://github.com/learn-ark/dapp-core-module-http-server-template/blob/dfde8e761c8e904bf40194fa56219ed318b4d85b/src/handlers.ts#L4-L28) file. We followed development best practices, so we have split the logic into route registrations and actual implementations. 
+
+{% hint style="success" %}
+You saw how easy it is to add new application/modules and register them on blockchain, making them available to everyone, secure and scalable by default - being powered by ARK Blockchain Core Platform. 
+{% endhint %}
+
+Continue to play around and start implementing your own application, supported by custom API, all packed within the ARK Core module concept, and still fully compatible with our bridgechain ecosystem.
+
+In the next part, we will learn how to listen to blockchain and share the information via API. We will continue to work on this example.
 
