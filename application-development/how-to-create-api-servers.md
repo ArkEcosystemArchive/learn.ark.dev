@@ -168,7 +168,7 @@ Head over to: [https://github.com/learn-ark/dapp-core-module-http-server-templat
 
 ### **Implementing Route Handlers**
 
-Adding more routes and handlers would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line \(add this line to `registerRoutes` method: line 52 in file `server.ts` above, just before the `mountServer` call\):
+Adding more routes and handlers within the same file would make code unreadable. That is why we must split the logic into route registrations and implementations. The file `handlers.ts` inside the template module servers serves as an example on how to achieve this. For example we register a route in the `server.ts` with this line \(add this line to `registerRoutes` method: line 52 in file `server.ts` above, just before the `mountServer` call\):
 
 ```typescript
 // source: https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L63
