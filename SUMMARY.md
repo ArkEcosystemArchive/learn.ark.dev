@@ -14,10 +14,15 @@
 
 ## Application Development
 
-* [How To Write Core Modules](application-development/how-to-write-core-modules/README.md)
-  * [Basic Module Structure](application-development/how-to-write-core-modules/basic-structure-and-properties.md)
-  * [Creating Your First Core Module](application-development/how-to-write-core-modules/setting-up-your-first-module.md)
+* [How To Write Core dApps](application-development/how-to-write-core-dapps/README.md)
+  * [Basic Module Structure](application-development/how-to-write-core-dapps/basic-structure-and-properties.md)
+  * [Creating Your First Core Module](application-development/how-to-write-core-dapps/setting-up-your-first-module.md)
 * [How To Create API Servers](application-development/how-to-create-api-servers.md)
+* [How To Write Custom Transactions Types](application-development/how-to-write-custom-transactions-types/README.md)
+  * [Define Transaction Structure](application-development/how-to-write-custom-transactions-types/implementing-transaction-structure.md)
+  * [Implement Transaction Builder](application-development/how-to-write-custom-transactions-types/implement-transaction-builder.md)
+  * [Implement Blockchain Protocol Handlers](application-development/how-to-write-custom-transactions-types/implement-blockchain-protocol-handler.md)
+  * [Running The Example](application-development/how-to-write-custom-transactions-types/example-walkthrough.md)
 
 ## Tools
 

@@ -36,7 +36,7 @@ Enough theory \(for now :-\)\), let's go and setup our development environment a
 
 {% page-ref page="core-getting-started/setting-up-your-development-environment/" %}
 
-{% page-ref page="application-development/how-to-write-core-modules/" %}
+{% page-ref page="application-development/how-to-write-core-dapps/" %}
 
 {% page-ref page="application-development/how-to-create-api-servers.md" %}
 

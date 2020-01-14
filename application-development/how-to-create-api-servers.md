@@ -16,7 +16,7 @@ Core provides a package called [core-http-utils](https://github.com/ARKEcosystem
 
 To create a new module from a template follow this simple guide:
 
-{% page-ref page="how-to-write-core-modules/setting-up-your-first-module.md" %}
+{% page-ref page="how-to-write-core-dapps/setting-up-your-first-module.md" %}
 
 After you have created the module and adjusted basic properties \(name, structure, dependencies\) we can start to add custom functionalities, like **adding a HTTP server.** 
 
@@ -36,7 +36,7 @@ If you used the dApp Http Server Module Template, the boilerplate HTTP Server im
 
 **Steps 1 and 2** are basic explanation of needed packages and implementation decisions for the HTTP server module template we are using. This is a **recommended read** if you want to understand the basic server mechanics and how to add it to you existing modules.
 
-As you've learned in [How to write a Core Modules](how-to-write-core-modules/) you will need to install the required dependencies. For our example we will use we need the **core-http-utils** package which you can install with the following command:
+As you've learned in [How to write a Core Modules](how-to-write-core-dapps/) you will need to install the required dependencies. For our example we will use we need the **core-http-utils** package which you can install with the following command:
 
 ```bash
 cd your-module-folder

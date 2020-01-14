@@ -2,7 +2,7 @@
 description: Learning the building blocks of ARK Core dApps
 ---
 
-# How To Write Core Modules
+# How To Write Core dApps
 
 ARK Core has an extensive and powerful plugin system that allows you to very easily break your application up into isolated pieces of business logic, and reusable utilities - **modules**. Modular structure enables developers to focus on writing reusable application logic instead of spending time thinking about software architecture.
 

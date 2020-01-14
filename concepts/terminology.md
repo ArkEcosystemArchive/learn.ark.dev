@@ -64,6 +64,10 @@ The result is JSON with block data:
 
 These are a few examples of relevant information which blocks are required to hold for the network's stability.
 
+## Bootstrap
+
+Bootstrap process is run each time a core node is started. The process evaluates all of the transactions in the local database and applies them to the corresponding wallets. All of the amounts, votes, and other custom properties are calculated and applied to the global state — the walletManager.
+
 ## Delegate
 
 A delegate’s role first and foremost is to secure the network. To gain community support however, delegates must also differentiate themselves. In addition to running nodes and securing the network, mainnet delegates often pledge to offer various services including development and testing, public resources and tools utilizing the mainnet, faucets, bounty programs, outreach, art, games, media creation, events, research, and more.   
@@ -146,8 +150,4 @@ All transactions are serialized and signed on client applications prior to submi
 {% hint style="danger" %}
 No node will accept a transaction without a valid signature from a private key. Make sure you invoke the SDK builder's `sign` method on your transaction object using the sender's private key.
 {% endhint %}
-
-
-
-
 
