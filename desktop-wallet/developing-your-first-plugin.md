@@ -4,7 +4,7 @@ description: >-
   ARK Desktop Wallet.
 ---
 
-# Developing Your First Plugin
+# Developing Your First Application
 
 In this guide, we will cover setting up your development environment, explain the structure of the plugins, and create our first custom plugin using a simple example.
 
@@ -293,8 +293,6 @@ If you want to learn from already developed plugins for the Desktop Wallet, have
 * [_**Additional avatars plugin**_](https://github.com/ark-ecosystem-desktop-plugins/additional-avatars)
 * [_**Dark contrast theme plugin**_](https://github.com/ark-ecosystem-desktop-plugins/dark-contrast-theme)
 * [_**Sound notification plugin**_](https://github.com/ark-ecosystem-desktop-plugins/sound-notifications)
-
-
 
 In the next tutorial we will look develop a custom desktop-wallet theme plugin. 
 

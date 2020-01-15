@@ -36,7 +36,7 @@
 
 ## Desktop-Wallet
 
-* [Developing Your First Plugin](desktop-wallet/developing-your-first-plugin.md)
+* [Developing Your First Application](desktop-wallet/developing-your-first-plugin.md)
 * [Developing a Wallet Theme](desktop-wallet/untitled.md)
 
 ## Key Concepts <a id="concepts"></a>
