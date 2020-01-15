@@ -26,6 +26,17 @@ To develop and register  a new business identity on the Core blockchain \(with c
 
 When a custom transactions is registered it is fully compatible with existing [API \(api/transactions/\)](https://api.ark.dev/public-rest-api/endpoints/transactions) endpoints.
 
+The same logic was used to build our `core-magistrate` transactions. You can check the source code here:
+
+* [core-magistrate-transactions](https://github.com/ArkEcosystem/core/tree/develop/packages/core-magistrate-transactions)
+* [core-magistrate-crypto](https://github.com/ArkEcosystem/core/tree/develop/packages/core-magistrate-crypto)
+
+{% hint style="success" %}
+One of the **best practices** we encountered was splitting of the custom transaction logic into two separate packages: **crypto** and **transactions**. 
+
+This makes it easier to include in light-client application, where only payload generation is needed \(the core-magistrate-crypto part\), and the core protocol validation still remains in the main package \(the core-magistrate-transaction package\) on the core node.
+{% endhint %}
+
 ## Load And Run The Custom Transactions dApp
 
 We assume that you already have local development environment setup. If not head over here:
