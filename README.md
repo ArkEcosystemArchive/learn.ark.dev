@@ -40,5 +40,5 @@ Enough theory \(for now :-\)\), let's go and setup our development environment a
 
 {% page-ref page="application-development/how-to-create-api-servers.md" %}
 
-{% page-ref page="application-development/how-to-write-custom-transactions-types/" %}
+
 

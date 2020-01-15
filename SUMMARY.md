@@ -59,6 +59,13 @@
 
 ## Have a question?
 
+* [Contribution Guidelines](have-a-question/contribution-guidelines/README.md)
+  * [Clean Code & Tests](have-a-question/contribution-guidelines/clean-code-and-tests.md)
+  * [Contributing](have-a-question/contribution-guidelines/contributing.md)
+  * [Git Branch Guidelines](have-a-question/contribution-guidelines/git-branch-guidelines.md)
+  * [Git Commit Guidelines](have-a-question/contribution-guidelines/git-commit-guidelines.md)
+  * [Releases & Versioning](have-a-question/contribution-guidelines/releases-and-versioning.md)
+  * [Going Live!](have-a-question/contribution-guidelines/going-live.md)
 * [Official ARK.io Website](https://ark.io)
 * [Ask in our Public Slack](https://ark.io/slack)
 * [Go to our Developer Hub](https://ark.io/developers)
