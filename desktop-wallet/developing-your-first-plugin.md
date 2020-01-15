@@ -8,6 +8,10 @@ description: >-
 
 In this guide, we will cover setting up your development environment, explain the structure of the plugins, and create our first custom plugin using a simple example.
 
+This guide below describes how to develop your plugin from scratch. To get you up to speed we also prepared a template project:
+
+{% embed url="https://github.com/ark-ecosystem-desktop-plugins/template" %}
+
 ## Plugin Architecture <a id="696a"></a>
 
 The architecture of plugins adheres to the default npm package structure, meaning it should have a _package.json_ with your main file in which your code will reside.
