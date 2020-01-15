@@ -12,7 +12,7 @@
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 * [Setup Your Own Blockchain Explorer](core-getting-started/setup-local-blockchain-explorer.md)
 
-## Application Development
+## Core Application Development <a id="application-development"></a>
 
 * [How To Write Core dApps](application-development/how-to-write-core-dapps/README.md)
   * [Basic Module Structure](application-development/how-to-write-core-dapps/basic-structure-and-properties.md)
@@ -33,6 +33,11 @@
 * [How To Set Custom Branding](explorer/branding.md)
 * [How To Add New Transactions Types](explorer/custom-transactions.md)
 * [How To Deploy The Blockchain Explorer](explorer/running-your-own-explorer.md)
+
+## Desktop-Wallet
+
+* [Developing Your First Plugin](desktop-wallet/developing-your-first-plugin.md)
+* [Developing a Wallet Theme](desktop-wallet/untitled.md)
 
 ## Key Concepts <a id="concepts"></a>
 
