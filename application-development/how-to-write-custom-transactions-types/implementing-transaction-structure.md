@@ -36,14 +36,6 @@ The use of the term **serde** throughout this document refers to the processes o
 
 We need to implement custom serde methods that will take care of the serde process for our newly introduced transaction fields. Abstract methods **serialize\(\)** and **deserialize\(\)** are defined by the base **Transaction** class, and are automatically called inside our custom class during the serde process.
 
-{% hint style="danger" %}
-When implementing new transaction types, never allow plain strings in the **transaction.asset,** but always restrict to something that excludes null bytes \(\u0000\). This can be achieved with stricter schema validation:
-
-```text
-{ type: "string", pattern: "^[^\u0000]+$" },
-```
-{% endhint %}
-
 The code snippet below is an excerpt example showing implementation of **serde** methods for a new **BusinessRegistration** transaction.
 
 ```typescript
@@ -87,6 +79,12 @@ export class BusinessRegistrationTransaction extends Transactions.Transaction {
 
 Each custom transaction is accompanied by enforced schema validation. To achieve this we must extend base `TransactionSchema` and provide rules for the custom field validation. Schema is defined with **AJV** and we can access it by calling the [**getSchema\(\)** ](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/src/transactions/BusinessRegistrationTransaction.ts#L16)method inside your new transaction class, in our case the `BusinessRegistrationTransaction` class.
 
+{% hint style="danger" %}
+When implementing new transaction types, **never allow plain strings** in the **transaction.asset,** but always restrict to something that excludes null bytes \(\u0000\). 
+{% endhint %}
+
+To forbid plain strings in the transaction.assets you can reuse some of already [defined schemas](https://github.com/ArkEcosystem/core/blob/master/packages/crypto/src/validation/schemas.ts), for example: `{ $ref: "hex" }` or `{ $ref: "alphanumeric" }` or `{ $ref: "publicKey" }`. If no schema fits your requirements refer to the null byte regex `{ type: "string", pattern: "^[^\u0000]+$"}` for the `transaction.asset` fields.
+
 ```typescript
 public static getSchema(): Transactions.schemas.TransactionSchema {
     return schemas.extend(schemas.transactionBaseSchema, {
@@ -105,14 +103,10 @@ public static getSchema(): Transactions.schemas.TransactionSchema {
                         required: ["name", "website"],
                         properties: {
                             name: {
-                                type: "string",
-                                minLength: 3,
-                                maxLength: 20,
+                                 $ref: "genericName",
                             },
                             website: {
-                                type: "string",
-                                minLength: 3,
-                                maxLength: 20,
+                                 $ref: "uri",
                             },
                         },
                     },

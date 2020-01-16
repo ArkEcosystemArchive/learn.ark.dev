@@ -133,3 +133,5 @@ You can also setup a local Testnet blockchain explorer to view the accepter and 
 
 {% page-ref page="../../core-getting-started/setup-local-blockchain-explorer.md" %}
 
+
+
