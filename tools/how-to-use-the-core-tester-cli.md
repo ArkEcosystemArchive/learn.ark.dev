@@ -146,7 +146,7 @@ This command is used to debug raw blocks and transactions. It also gives us opti
 
 After running, we can see the following console output:
 
-```text
+```bash
 Debug blocks and transactions
 
 USAGE
@@ -164,7 +164,7 @@ We can also run `--help` command for any of the subcommands, for example `./bin/
 
 #### Examples
 
-```text
+```bash
 ./bin/run debug:deserialize  --type="transaction" --copy --data="ff02170100000000000a0000000000000003287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac3780969800000000000000ab9041000000000000000017ee6703c6780c881f672256c08e5444930f2a8c149c637acdb299a575ec8ea762230904ff352dae7c486777790664a2d99ee43fbbaf2c40948dbcc829ad723e920ac91d91a928d1eb5500ca9aa6cfb8b376e743b8"
 ./bin/run debug:identity --type="publicKey" --copy --data="03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37"
 ./bin/run debug:identity --type="passphrase" --copy --data="enter vessel fashion moon relax inmate net spare game silk hello anger"
