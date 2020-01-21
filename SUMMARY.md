@@ -23,6 +23,7 @@
   * [Implement Transaction Builder](application-development/how-to-write-custom-transactions-types/implement-transaction-builder.md)
   * [Implement Blockchain Protocol Handlers](application-development/how-to-write-custom-transactions-types/implement-blockchain-protocol-handler.md)
   * [Running The Example](application-development/how-to-write-custom-transactions-types/example-walkthrough.md)
+* [How to Use Milestones](application-development/how-to-use-milestones.md)
 
 ## Tools
 
