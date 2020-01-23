@@ -24,7 +24,7 @@ You will also need to install the [_**Desktop Wallet**_](https://ark.io/wallet) 
 * We will also need an NPM account \(in case you don’t have one already\). Simply visit [**https://www.npmjs.com/signup**](https://www.npmjs.com/signup) and register.
 * The next step is to use the template we have prepared to get you started. In order to do it go to this link [**https://github.com/ark-ecosystem-desktop-plugins/theme-template**](https://github.com/ark-ecosystem-desktop-plugins/theme-template) and press the ‘_**Use this template**_’ button.
 
-{% embed url="https://github.com/ark-ecosystem-desktop-plugins/theme-template" caption="Desktop Plugin Template Project" %}
+{% embed url="https://github.com/learn-ark/desktop-wallet-plugin-theme-template" caption="Desktop Wallet Theme Plugin Template Project" %}
 
 In the next step you can name the repository \(can be some catchy name like ocean-breeze-theme, for this example, we’ll stick with the original name theme-template\), leave it as a public repository and press create a repository from the template.
 

@@ -10,7 +10,7 @@ In this guide, we will cover setting up your development environment, explain th
 
 This guide below describes how to develop your plugin from scratch. To get you up to speed we also prepared a template project:
 
-{% embed url="https://github.com/ark-ecosystem-desktop-plugins/template" %}
+{% embed url="https://github.com/learn-ark/desktop-wallet-plugin-template" caption="Desktop Wallet Plugin Template Project" %}
 
 ## Plugin Architecture <a id="696a"></a>
 
