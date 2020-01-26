@@ -12,7 +12,7 @@ Modules are the core building blocks of our blockchain development framework. Mo
 **It is essential for you to understand and master the art of ARK Core Module development.** 
 {% endhint %}
 
-Everything you will built will be packaged as a core module. That will also enable you to separate your code from our core blockchain platform, meaning updates and migration will be almost zero-configuration and effort. To learn more about module structure and how to write them follow the links below:
+Everything you build will be packaged as a core module. That will also enable you to separate your code from our core blockchain platform, meaning updates and migration will be almost zero-configuration and effort. To learn more about module structure and how to write them follow the links below:
 
 {% page-ref page="basic-structure-and-properties.md" %}
 
