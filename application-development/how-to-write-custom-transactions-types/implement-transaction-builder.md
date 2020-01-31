@@ -49,6 +49,13 @@ export class BusinessRegistrationBuilder extends Transactions.TransactionBuilder
 Now that we have implemented our builder class, we can use it to build new custom transaction payloads. The [code snippet](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/__tests__/test.test.ts#L13-L17) below shows us how to use the TransactionBuilder to create signed and serialized transaction payloads. 
 
 ```typescript
+import { Transactions } from "@arkecosystem/crypto";
+import { BusinessRegistrationBuilder } from "../src/builders"; // adapt to your directory structure
+import { BusinessRegistrationTransaction } from "../src/transactions"; // adapt to your directory structure
+
+// register your custom transaction (do it only once) to the crypto library, so that you can use your builder
+Transactions.TransactionRegistry.registerTransactionType(BusinessRegistrationTransaction);
+
 const builder = new BusinessRegistrationBuilder();
 const actual = builder
     .nonce("3")
