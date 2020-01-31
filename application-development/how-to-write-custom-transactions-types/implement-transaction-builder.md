@@ -9,7 +9,7 @@ description: >-
 Builder class handles versioning, serde process, milestones, dynamic-fee logic and _all cryptography related items_ \(sign, multisign, second-sign, sign with and without WIF, nonce logic\). The following code-snippet shows the actual i[mplementation of the **Builder**](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/src/builders/BusinessRegistrationBuilder.ts#L4) class for the BusinessRegistration Transaction.
 
 {% hint style="success" %}
-Builder is something you will reuse in your client applications for creating new transaction payloads.
+Builder is something you will reuse in your **client applications** for creating new transaction payloads.
 {% endhint %}
 
 ```typescript
