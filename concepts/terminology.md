@@ -76,6 +76,10 @@ A delegate is an account, or account owner, who has registered as one on the blo
 
 Delegated block production is an advantage for a blockchain. It allows for seamless processing of blocks because the delegates are incentivized, through monetary reward, to maintain their voters' pledges by acting appropriately.
 
+## The GTI engine - Custom Transactions
+
+The GTI engine was initially designed to assist our developers make implementations of new transaction types easier, maintainable, and standardized across the board. By putting some logic behind custom transaction types, we feel this is a much better and more powerful approach to develop stronger use-cases than with conventional smart contracts. 
+
 ## Peer
 
 Every ARK node maintains a registry of other full nodes, referred to as _peers_. At a minimum, a peer must expose its p2p API, but most also expose a Public API.

@@ -8,7 +8,7 @@ description: >-
 # How To Write Custom Transactions Types
 
 {% hint style="success" %}
-GTI was initially designed to assist our developers make implementations of new transaction types easier, maintainable, and standardized across the board. **By putting some logic behind custom transaction types, we feel this is a much better and more powerful approach to develop stronger use-cases than with conventional smart contracts.**
+The GTI engine was initially designed to assist our developers make implementations of new transaction types easier, maintainable, and standardized across the board. **By putting some logic behind custom transaction types, we feel this is a much better and more powerful approach to develop stronger use-cases than with conventional smart contracts.**
 {% endhint %}
 
 Any new implemented Custom Transaction will be packed inside a core module and deployed on the blockchain as a core dApp.

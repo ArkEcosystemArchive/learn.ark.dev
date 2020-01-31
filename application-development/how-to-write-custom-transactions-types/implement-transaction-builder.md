@@ -8,10 +8,6 @@ description: >-
 
 Builder class handles versioning, serde process, milestones, dynamic-fee logic and _all cryptography related items_ \(sign, multisign, second-sign, sign with and without WIF, nonce logic\). The following code-snippet shows the actual i[mplementation of the **Builder**](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/src/builders/BusinessRegistrationBuilder.ts#L4) class for the BusinessRegistration Transaction.
 
-{% hint style="success" %}
-Builder is something you will reuse in your **client applications** for creating new transaction payloads.
-{% endhint %}
-
 ```typescript
 import { Interfaces, Transactions, Utils } from "@arkecosystem/crypto";
 import { BusinessRegistrationTransaction } from "../transactions";
@@ -47,26 +43,17 @@ export class BusinessRegistrationBuilder extends Transactions.TransactionBuilder
         return this;
     }
 }
+
 ```
 
-Now that we have implemented our builder class, we can use it to build new custom transaction payloads. The [code snippet](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/__tests__/test.test.ts#L13-L17) below shows us how to use the TransactionBuilder to create signed and serialized transaction payloads.
-
-{% hint style="danger" %}
-When using Transaction Builder on the client side \(your mobile/web app\) make sure to register your TransactionType inside the **@arkecosystem/crypto** package with the following code:
-
-**`Transactions.TransactionRegistry.registerTransactionType(YOUR_TRANSACTION_CLASS);`**
-
-Check the code-snippet below, line 8.
-{% endhint %}
+Now that we have implemented our builder class, we can use it to build new custom transaction payloads. The [code snippet](https://github.com/learn-ark/dapp-custom-transaction-example/blob/master/__tests__/test.test.ts#L13-L17) below shows us how to use the TransactionBuilder to create signed and serialized transaction payloads. 
 
 ```typescript
 import { Transactions } from "@arkecosystem/crypto";
 import { BusinessRegistrationBuilder } from "../src/builders"; // adapt to your directory structure
 import { BusinessRegistrationTransaction } from "../src/transactions"; // adapt to your directory structure
 
-// Register your custom transaction (do it only once) to the crypto library, 
-// This is important when using buildier on the client side.
-
+// register your custom transaction (do it only once) to the crypto library, so that you can use your builder
 Transactions.TransactionRegistry.registerTransactionType(BusinessRegistrationTransaction);
 
 const builder = new BusinessRegistrationBuilder();
