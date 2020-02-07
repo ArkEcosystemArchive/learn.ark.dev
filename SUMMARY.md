@@ -22,6 +22,7 @@
   * [Define Transaction Structure](application-development/how-to-write-custom-transactions-types/implementing-transaction-structure.md)
   * [Implement Transaction Builder](application-development/how-to-write-custom-transactions-types/implement-transaction-builder.md)
   * [Implement Blockchain Protocol Handlers](application-development/how-to-write-custom-transactions-types/implement-blockchain-protocol-handler.md)
+  * [Loading The dApp Within Core](application-development/how-to-write-custom-transactions-types/loading-the-dapp-within-core.md)
   * [Running The Example](application-development/how-to-write-custom-transactions-types/example-walkthrough.md)
 * [How to Use Milestones](application-development/how-to-use-milestones.md)
 

@@ -53,7 +53,7 @@ git submodule add -f https://github.com/learn-ark/dapp-custom-transaction-exampl
 cd dapp-custom-transaction-example
 ```
 
-### STEP 2: Load The dApp \(Custom Transactions module\) In The Corresponding Network Configurations.
+### STEP 2: Load The dApp\(Custom Transactions module\) In The Corresponding Network Configurations.
 
 Go to: `core/packages/core/bin/testnet`
 
@@ -61,64 +61,29 @@ Go to: `core/packages/core/bin/testnet`
 cd packages/core/bin/config/testnet
 ```
 
-Locate file `plugins.js`. We will add our plugin name to the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/custom-transactions": {}`: to in the file `plugins.js` file, so it looks something like this:
+Locate file `plugins.js`. We will add our plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/custom-transactions": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
-    ......
-    "@arkecosystem/custom-transactions": {}, // LOADING THE PLUGIN - ORDER IS IMPORTANT
-    "@arkecosystem/core-state": {},
-    "@arkecosystem/core-database-postgres": {
-        connection: {
-            host: process.env.CORE_DB_HOST || "localhost",
-            port: process.env.CORE_DB_PORT || 5432,
-            database: process.env.CORE_DB_DATABASE || `${process.env.CORE_TOKEN}_${process.env.CORE_NETWORK_NAME}`,
-            user: process.env.CORE_DB_USERNAME || process.env.CORE_TOKEN,
-            password: process.env.CORE_DB_PASSWORD || "password",
-        },
+    "@arkecosystem/core-exchange-json-rpc": {
+        enabled: process.env.CORE_EXCHANGE_JSON_RPC_ENABLED,
+        host: process.env.CORE_EXCHANGE_JSON_RPC_HOST || "0.0.0.0",
+        port: process.env.CORE_EXCHANGE_JSON_RPC_PORT || 8080,
+        allowRemote: false,
+        whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
     },
-    ......
+    "@arkecosystem/core-snapshots": {},
+    "@arkecosystem/custom-transactions": {}, //our application hook (here we load the plugin/dapp)
 ```
 
-{% hint style="danger" %}
-**Order of plugin/dapp loading is very important.** Since your plugin is adding new transaction types to the blockchain protocol, it **MUST** be registered before we load the  **@arkecosystem/core-state** module ****\(see example snippet above\).
-{% endhint %}
-
-### STEP 3: Loading The dapp/Plugin With A Separate Processes
-
-In production environment we usually run two separate processes, one for a **relay** node and another one for **forger**. A relay node looks for the default **plugins.js** configuration and automatically loads the listed plugins \(see above\).
-
-{% hint style="danger" %}
-To register the custom-transaction plugin for another processes, we **MUST** add it to the **app.js** file in the folder: **core/packages/core/bin/config/network-name/app.js.**
-{% endhint %}
-
- The file looks like this:
-
-```javascript
-module.exports = {
-    cli: {
-        core: {
-            run: {
-                plugins: {
-                    include: [
-                        "@arkecosystem/custom-transactions"
-                    ],
-                },
-            },
-        },
-...... // More content
-```
-
-Add your plugin handle/name to all the include sections, so that the core will load the plugin when running other important processes.
-
-### STEP 4: Setup Development Docker Database
+### STEP 3: Setup Development Docker Database
 
 Setup docker database config and run Postgres DB via Docker. Follow the steps from here: [https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet\#step-1-start-docker-testnet-database](https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1-start-docker-testnet-database)
 
-### STEP 5: Start Local Testnet Blockchain
+### STEP 4: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here: [https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet\#step-2-testnet-network-boot](https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot)
 
-### STEP 6: Send New Custom Transaction To The Local Node
+### STEP 5: Send New Custom Transaction To The Local Node
 
 Send your new transaction type payload to the local blockchain node with the following `curl` command:
 
@@ -167,4 +132,6 @@ This means that transactions was accepted into the pool and broadcasted to the r
 You can also setup a local Testnet blockchain explorer to view the accepter and created transaction. Follow the step here to run a local Testnet blockchain explorer:
 
 {% page-ref page="../../core-getting-started/setup-local-blockchain-explorer.md" %}
+
+
 
