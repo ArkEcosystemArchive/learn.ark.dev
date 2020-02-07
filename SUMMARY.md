@@ -29,20 +29,16 @@
 * [Understanding Testing Within Core](application-development/understanding-testing-within-core.md)
 * [Data Models](application-development/data-models.md)
 
-## Tools
+## Applications & Tools <a id="tools"></a>
 
 * [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
-
-## Blockchain Explorer <a id="explorer"></a>
-
-* [How To Set Custom Branding](explorer/branding.md)
-* [How To Add New Transactions Types](explorer/custom-transactions.md)
-* [How To Deploy The Blockchain Explorer](explorer/running-your-own-explorer.md)
-
-## Desktop-Wallet
-
-* [Developing Your First Application](desktop-wallet/developing-your-first-plugin.md)
-* [Developing a Wallet Theme](desktop-wallet/untitled.md)
+* [Desktop-Wallet](tools/desktop-wallet/README.md)
+  * [Developing Your First Application](tools/desktop-wallet/developing-your-first-plugin.md)
+  * [Developing a Wallet Theme](tools/desktop-wallet/untitled.md)
+* [Blockchain Explorer](tools/blockchain-explorer/README.md)
+  * [How To Set Custom Branding](tools/blockchain-explorer/branding.md)
+  * [How To Add New Transactions Types](tools/blockchain-explorer/custom-transactions.md)
+  * [How To Deploy The Blockchain Explorer](tools/blockchain-explorer/running-your-own-explorer.md)
 
 ## Key Concepts <a id="concepts"></a>
 
