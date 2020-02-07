@@ -2,7 +2,7 @@
 description: Learn how to deploy and configure block explorer.
 ---
 
-# How To Deploy The Blockchain Explorer
+# How To Deploy Blockchain Explorer
 
 At ARK.io, we have a [mainnet](https://explorer.ark.io) and [devnet](https://dexplorer.ark.io) explorer running to show the current state of the network and what is happening on it. In addition, there is are official mirrors for the mainnet explorer too, which you can find on different services such as [GitHub pages](https://arkecosystem.github.io/explorer/) and [Netlify](https://ark-explorer.netlify.com/#/).
 

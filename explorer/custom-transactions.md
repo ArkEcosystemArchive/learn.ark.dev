@@ -1,9 +1,3 @@
----
-description: >-
-  This guide will show you how to add custom fields and properties from new
-  transaction types to Block Explorer.
----
-
 # How To Add New Transactions Types
 
 By default the ARK Explorer will work with new transaction types by treating them like transfers \(type 0\). This may not be the correct way to fully utilize the properties your new transaction type has, so lets take a look at the components that are involved.
@@ -52,7 +46,7 @@ In short, you will want to look into this component when your new transaction ty
 
 ### Tables
 
-> [src/components/tables/\*.vue](../../concepts/transaction-types/vote-and-unvote-transaction.md)
+> [src/components/tables/\*.vue](../concepts/transaction-types/vote-and-unvote-transaction.md)
 
 The Explorer consists mostly of tables that show information fetches from the blockchain. These tables have specific columsn that fit a general transaction, but if you require different columns to show properties of your new transaction type \(e.g. `businesses` or `timelock`\), you will want to add a new table component in this directory to properly show it. The simplest way would be to take a look at how the other tables are constructed here, and create your own version with the columns you need.
 
