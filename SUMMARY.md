@@ -36,9 +36,9 @@
   * [Developing Your First Application](desktop-wallet/developing-your-first-plugin.md)
   * [Developing a Wallet Theme](desktop-wallet/untitled.md)
 * [Blockchain Explorer](tools/blockchain-explorer/README.md)
-  * [How To Set Custom Branding](explorer/branding.md)
-  * [How To Add New Transactions Types](explorer/custom-transactions.md)
-  * [How To Deploy The Blockchain Explorer](explorer/running-your-own-explorer.md)
+  * [How To Set Custom Branding](tools/blockchain-explorer/branding.md)
+  * [How To Add New Transactions Types](tools/blockchain-explorer/custom-transactions.md)
+  * [How To Deploy The Blockchain Explorer](tools/blockchain-explorer/running-your-own-explorer.md)
 
 ## Key Concepts <a id="concepts"></a>
 
