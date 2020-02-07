@@ -1,7 +1,5 @@
 ---
-description: >-
-  This guide explains how to add enable your plugin within the Core loading
-  process.
+description: This guide explains how to enable your plugin within the Core loading process.
 ---
 
 # Loading The dApp Within Core
