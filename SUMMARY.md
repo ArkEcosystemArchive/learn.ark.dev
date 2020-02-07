@@ -12,7 +12,7 @@
 * [Spinning Up Your First Testnet](core-getting-started/spinning-up-your-first-testnet.md)
 * [Setup Your Own Blockchain Explorer](core-getting-started/setup-local-blockchain-explorer.md)
 
-## Core Application Development <a id="application-development"></a>
+## Core dApp Development <a id="application-development"></a>
 
 * [How To Write Core dApps](application-development/how-to-write-core-dapps/README.md)
   * [Basic Module Structure](application-development/how-to-write-core-dapps/basic-structure-and-properties.md)
