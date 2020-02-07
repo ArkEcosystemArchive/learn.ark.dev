@@ -5,7 +5,7 @@ description: >-
   before going live in production.
 ---
 
-# How to Use Milestones
+# How to Use The Milestones
 
 ## What Are Milestones and How Do They Work? <a id="what-are-milestones-and-how-do-they-work"></a>
 
