@@ -25,6 +25,8 @@
   * [Loading The dApp Within Core](application-development/how-to-write-custom-transactions-types/loading-the-dapp-within-core.md)
   * [Running The Example](application-development/how-to-write-custom-transactions-types/example-walkthrough.md)
 * [How to Use Milestones](application-development/how-to-use-milestones.md)
+* [Understanding Testing Within Core](application-development/understanding-testing-within-core.md)
+* [How To Listen To Core Events](application-development/how-to-listen-to-core-events.md)
 
 ## Tools
 
