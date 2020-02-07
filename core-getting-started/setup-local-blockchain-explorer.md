@@ -16,7 +16,7 @@ Blockchain Explorer communicates with the local Core node via the [Public REST A
 
 For **production** deployment and customisation options head over here:
 
-{% page-ref page="../tools/blockchain-explorer/running-your-own-explorer.md" %}
+{% page-ref page="../explorer/running-your-own-explorer.md" %}
 
 ## STEP 1: Clone Official Explorer Repository
 
@@ -34,7 +34,7 @@ From the `explorer` root folder run`yarn install` command. This will build and i
 There are several run modes available for the Explorer package. You can run it as official Mainnet or Devnet explorer, or have it run as a simple local express server, it is up to your needs. 
 
 {% hint style="info" %}
-More detailed information about all possible running modes can be found in the [Blockchain Explorer](../tools/blockchain-explorer/running-your-own-explorer.md) section.
+More detailed information about all possible running modes can be found in the [Blockchain Explorer](../explorer/running-your-own-explorer.md) section.
 {% endhint %}
 
 For our simple task of viewing, browsing and searching the local Testnet blockchain, all we need to do is run the following command from the Explorer root folder:

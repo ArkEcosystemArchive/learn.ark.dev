@@ -17,7 +17,7 @@ To make sure that everything is working as intended you should follow these chec
 * Test `core-json-rpc` to ensure it works for exchanges
 * Run benchmarks on `master` and `develop` to see if there are crypto performance regressions
 
-### Transactions <a id="transactions"></a>
+### [\#](https://docs.ark.io/guidebook/release-guidelines/going-live.html#transactions) Transactions <a id="transactions"></a>
 
 * Send a transfer transaction
   * 1 Passphrase
@@ -79,4 +79,6 @@ To make sure that everything is working as intended you should follow these chec
   * 2 Passphrases
 * Send a second signature registration transaction
   * 1 Passphrase
+
+Last Updated: 12/16/2019, 11:20:17 AM
 
