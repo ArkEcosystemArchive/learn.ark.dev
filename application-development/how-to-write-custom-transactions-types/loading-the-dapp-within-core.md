@@ -40,7 +40,7 @@ Locate file `plugins.js`. We will add our plugin name to the list of the loaded 
 
 Repeat the process for other network configurations.
 
-## STEP 2: Loading The dapp With Separate Processes
+## STEP 2: Load your dApp With Separate Core Processes
 
 In production environment we usually run two separate processes, one for a **relay** node and another one for **forger**. A relay node looks for the default **plugins.js** configuration and automatically loads the listed plugins \(see above\).
 

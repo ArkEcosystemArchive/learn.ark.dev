@@ -37,53 +37,30 @@ One of the **best practices** we encountered was splitting of the custom transac
 This makes it easier to include in light-client application, where only payload generation is needed \(the core-magistrate-crypto part\), and the core protocol validation still remains in the main package \(the core-magistrate-transaction package\) on the core node.
 {% endhint %}
 
-## Load And Run The Custom Transactions dApp
+## STEP 1: Load And Run The Custom Transactions dApp
 
 We assume that you already have local development environment setup. If not head over here:
 
 {% page-ref page="../../core-getting-started/setting-up-your-development-environment/" %}
 
-After successful setup of local development environment follow the steps below:
+After successful setup of local development environment we need to add the plugin handle/name to the corresponding files. We need to add the handle **"@arkecosystem/custom-transactions"** to the two files for each network configuration. The files are:
 
-### STEP 1: Checkout This dApp Project As a GitSubmodule
+* **plugins.js** in `core/packages/core/bin/config/network-name/plugins.js` 
+* **app.js** in `core/packages/core/bin/config/network-name/app.js`
 
-```bash
-cd plugins/ #location for loading of custom non-core dApps
-git submodule add -f https://github.com/learn-ark/dapp-custom-transaction-example
-cd dapp-custom-transaction-example
-```
+The How To Steps are explained in here:
 
-### STEP 2: Load The dApp\(Custom Transactions module\) In The Corresponding Network Configurations.
+{% page-ref page="loading-the-dapp-within-core.md" %}
 
-Go to: `core/packages/core/bin/testnet`
-
-```text
-cd packages/core/bin/config/testnet
-```
-
-Locate file `plugins.js`. We will add our plugin name to end of the list of the loaded plugins. This means that core will pickup the plugin/dapp and load it for a specific network configuration. Add line `"@arkecosystem/custom-transactions": {}`: to the end of the `plugins.js` file, so it looks something like this:
-
-```javascript
-    "@arkecosystem/core-exchange-json-rpc": {
-        enabled: process.env.CORE_EXCHANGE_JSON_RPC_ENABLED,
-        host: process.env.CORE_EXCHANGE_JSON_RPC_HOST || "0.0.0.0",
-        port: process.env.CORE_EXCHANGE_JSON_RPC_PORT || 8080,
-        allowRemote: false,
-        whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
-    },
-    "@arkecosystem/core-snapshots": {},
-    "@arkecosystem/custom-transactions": {}, //our application hook (here we load the plugin/dapp)
-```
-
-### STEP 3: Setup Development Docker Database
+## STEP 2: Setup Development Docker Database
 
 Setup docker database config and run Postgres DB via Docker. Follow the steps from here: [https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet\#step-1-start-docker-testnet-database](https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1-start-docker-testnet-database)
 
-### STEP 4: Start Local Testnet Blockchain
+## STEP 3: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here: [https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet\#step-2-testnet-network-boot](https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot)
 
-### STEP 5: Send New Custom Transaction To The Local Node
+## STEP 4: Send New Custom Transaction To The Local Node
 
 Send your new transaction type payload to the local blockchain node with the following `curl` command:
 
@@ -132,6 +109,4 @@ This means that transactions was accepted into the pool and broadcasted to the r
 You can also setup a local Testnet blockchain explorer to view the accepter and created transaction. Follow the step here to run a local Testnet blockchain explorer:
 
 {% page-ref page="../../core-getting-started/setup-local-blockchain-explorer.md" %}
-
-
 
