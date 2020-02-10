@@ -30,7 +30,7 @@ If the commit reverts a previous commit, it should begin with `revert:`, followe
 
 ### Type <a id="type"></a>
 
-If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. However, if there is any [BREAKING CHANGE](https://docs.ark.io/guidebook/contribution-guidelines/git-commit-guidelines.html#footer), the commit will always appear in the changelog.
+If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. However, if there is any BREAKING CHANGE, the commit will always appear in the changelog.
 
 Other prefixes are up to your discretion. Suggested prefixes are `docs`, `chore`, `style`, `refactor`, and `test` for non-changelog related tasks.
 
