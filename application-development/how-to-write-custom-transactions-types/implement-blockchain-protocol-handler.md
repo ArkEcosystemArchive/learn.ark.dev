@@ -171,5 +171,17 @@ async register(container: Container.IContainer, options) {
 }
 ```
 
-Your custom transaction type implementation is now **COMPLETE**.  Follow the next steps to add and load your plugin during the CORE node bootstrap process.
+Your custom transaction type implementation is now **COMPLETE**. 
+
+A fully working example is available for you to examine, learn and download here. 
+
+{% embed url="https://github.com/learn-ark/dapp-custom-transaction-example" %}
+
+This example is implemented as a core dApp \(module\). You can learn more about core modules at here:
+
+{% page-ref page="../how-to-write-core-dapps/" %}
+
+You can use templates available for you to kick start your custom transaction type implementation, from here:
+
+{% embed url="https://github.com/learn-ark/dapp-core-module-gti-template" %}
 

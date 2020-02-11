@@ -30,7 +30,7 @@ The guidebook contains some technical references and in coding tutorials that mi
 
 {% page-ref page="concepts/transaction-lifecycle.md" %}
 
-## Developer Guides And Tutorials
+## Developer Tutorials
 
 Enough theory \(for now :-\)\), let's go and setup our development environment and finally start coding your next awesome project.
 
@@ -39,6 +39,20 @@ Enough theory \(for now :-\)\), let's go and setup our development environment a
 {% page-ref page="application-development/how-to-write-core-dapps/" %}
 
 {% page-ref page="application-development/how-to-create-api-servers.md" %}
+
+{% page-ref page="application-development/how-to-write-custom-transactions-types/" %}
+
+{% page-ref page="application-development/how-to-use-milestones.md" %}
+
+{% page-ref page="application-development/how-to-listen-to-core-events.md" %}
+
+## Developer Guides
+
+{% page-ref page="have-a-question/contribution-guidelines/" %}
+
+{% page-ref page="application-development/understanding-testing-within-core.md" %}
+
+{% page-ref page="application-development/data-models.md" %}
 
 
 
