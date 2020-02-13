@@ -42,7 +42,7 @@
 
 ## Key Concepts <a id="concepts"></a>
 
-* [Understanding The Transaction Lifecycle](concepts/transaction-lifecycle.md)
+* [Understanding Transaction Lifecycle](concepts/transaction-lifecycle.md)
 * [Understanding Transaction Nonce](concepts/understanding-transaction-nonce.md)
 * [Cryptography Overview](concepts/cryptography.md)
 * [Transaction Types](concepts/transaction-types/README.md)

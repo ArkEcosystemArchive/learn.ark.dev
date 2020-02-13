@@ -32,7 +32,7 @@ A nonce depends on the amount of transaction a specific wallet has sent. You can
 }
 ```
 
-## How To Set The Nonce Value?
+## How To Set Nonce Value?
 
 When you create a new transaction for that wallet, you will use the **current nonce and add 1** to it to get to the new nonce value.
 

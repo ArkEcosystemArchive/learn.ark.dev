@@ -2,7 +2,7 @@
 description: Describing Transaction's Journey From Client to Core Server (Blockchain)
 ---
 
-# Understanding The Transaction Lifecycle
+# Understanding Transaction Lifecycle
 
 {% hint style="success" %}
 A transaction is an atomic change in the state of the blockchain. The simplest form transfers value from address A to B, incorporating a fee for the processing. Transactions are bundled into a block. At that moment they are committed to the blockchain and become irreversible.
