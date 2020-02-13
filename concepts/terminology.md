@@ -155,3 +155,11 @@ All transactions are serialized and signed on client applications prior to submi
 No node will accept a transaction without a valid signature from a private key. Make sure you invoke the SDK builder's `sign` method on your transaction object using the sender's private key.
 {% endhint %}
 
+## Nonce
+
+In ARK, every transaction has a nonce. The nonce is the number of transactions sent from a given address. Each time you send a transaction, the nonce value increases by **1**. There are rules about what transactions are considered valid transactions, and the nonce is used to enforce some of these rules.
+
+Read more about nonces here:
+
+{% page-ref page="understanding-transaction-nonce.md" %}
+
