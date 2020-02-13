@@ -8,10 +8,6 @@ description: Developer Guides And Tutorials Supported with Key Blockchain Mechan
 
 This is the ARK Learning Hub where Developer Guidebooks and Tutorials will be listed. ARK Learning Hub is here to help you learn blockchain application development on top of modular ARK Core technology platform. After mastering the guides and tutorials listed here, you'll be ready to build your own ARK-powered applications and blockchains. **Welcome and happy coding.**
 
-{% hint style="danger" %}
-**This documentation is directed towards the ARK CORE v2.6 pending release. You can already build and use the documented tooling by using the develop branch of our CORE repository.** 
-{% endhint %}
-
 ## What is ARK?
 
 The ARK Ecosystem allows blockchain developers to customize a sovereign blockchain complete with required feature sets. ARK’s value proposition lies in the array of services offered through the ARK Blockchain Platform. 
