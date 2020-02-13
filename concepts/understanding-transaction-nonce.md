@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In ARK, every transaction has a nonce. The nonce is the number of transactions sent from a given address. Each time you send a transaction, the nonce value increases by `1`. There are rules about what transactions are considered valid transactions, and the nonce is used to enforce some of these rules. 
+In ARK, every transaction has a nonce. The nonce is the number of transactions sent from a given address. Each time you send a transaction, the nonce value increases by **1**. There are rules about what transactions are considered valid transactions, and the nonce is used to enforce some of these rules. 
 
 **Specifically:**
 
