@@ -101,7 +101,7 @@ yarn dev
 
 4. Open the **Desktop Wallet** and go to the **Sidebar &gt; Plugin Manager** and **enable** it.
 
-![](../.gitbook/assets/1_l15utkfsszt9-nymetei2g.png)
+![](../../.gitbook/assets/1_l15utkfsszt9-nymetei2g.png)
 
 **Well OK, but where is my component at?**
 
@@ -198,7 +198,7 @@ If you try to run this code, the wallet will throw an error because you are acce
 
 Now you can finally access your component by clicking the side menu button.
 
-![](../.gitbook/assets/1_4piqmtuoaswtdxavpal4ow.png)
+![](../../.gitbook/assets/1_4piqmtuoaswtdxavpal4ow.png)
 
 ## Interacting With Data <a id="41b9"></a>
 

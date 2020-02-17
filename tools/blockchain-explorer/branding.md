@@ -1,6 +1,11 @@
-# How To Set Custom Branding
+---
+description: >-
+  This document will explain the files that you might have to adjust to have the
+  Explorer work with your custom chain and have it displayed in your own brand
+  colors.
+---
 
-This document will explain the files that you might have to adjust to have the Explorer work with your custom chain and have it displayed in your own brand colors.
+# How To Set Custom Branding
 
 ### Network Data
 

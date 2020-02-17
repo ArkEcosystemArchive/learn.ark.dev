@@ -1,3 +1,7 @@
+---
+description: The nonce is the number of transactions sent from a given address.
+---
+
 # Understanding Transaction Nonce
 
 ## Introduction

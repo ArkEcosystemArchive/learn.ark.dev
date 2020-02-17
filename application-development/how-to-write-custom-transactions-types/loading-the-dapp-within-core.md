@@ -1,7 +1,5 @@
 ---
-description: >-
-  This guide explains how to add enable your plugin within the Core loading
-  process.
+description: This guide explains how to enable your plugin within the Core loading process.
 ---
 
 # Loading The dApp Within Core
@@ -45,7 +43,7 @@ Repeat the process for other network configurations.
 In production environment we usually run two separate processes, one for a **relay** node and another one for **forger**. A relay node looks for the default **plugins.js** configuration and automatically loads the listed plugins \(see above\).
 
 {% hint style="danger" %}
-To register the custom-transaction plugin for another processes, we **MUST** add it to the **app.js** file in the folder: **core/packages/core/bin/config/network-name/app.js.**
+To register the custom-transaction plugin for another processes, we **MUST** add it to the **app.js** file in the folder: **core/packages/core/bin/config/{network-name}/app.js.**
 {% endhint %}
 
  The file looks like this:
@@ -68,4 +66,14 @@ module.exports = {
 Add your plugin handle/name to all the include sections, so that the core will load the plugin when running other important processes. 
 
 Repeat the steps for other network configurations. 
+
+A fully working example is available for you to examine, learn and download here. 
+
+{% embed url="https://github.com/learn-ark/dapp-custom-transaction-example" %}
+
+This example is implemented as a core dApp \(module\). You can learn more about core modules at here:
+
+{% page-ref page="../how-to-write-core-dapps/" %}
+
+Now, let's get the example running: 
 
