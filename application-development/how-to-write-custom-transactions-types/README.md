@@ -27,8 +27,6 @@ To develop a custom transaction type we need to implement code-contracts defined
 
 {% page-ref page="implement-blockchain-protocol-handler.md" %}
 
-{% page-ref page="loading-the-dapp-within-core.md" %}
-
 ## What Can Be Built With Custom Transactions?
 
 _Most of the real-world interactions are transaction-based/event-based. **Having the ability to add your custom functionality on top of existing distributed ledger technology with ease and reuse its benefits — the possibilities are endless.**_

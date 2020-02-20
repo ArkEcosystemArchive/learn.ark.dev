@@ -6,9 +6,7 @@ description: >-
 
 # Running The Example
 
-**This Example is currently operational only on our** [**core/develop**](https://github.com/ArkEcosystem/core/tree/develop) **branch!**
-
-This dApp enables a new transaction type on the ARK Core blockchain. New transaction types follows existing blockchain protocol. You can fork or view full example code here:
+This example dApp enables a new transaction type on the ARK Core blockchain. New transaction types follows existing blockchain protocol. You can fork or view full example code here:
 
 {% embed url="https://github.com/learn-ark/dapp-custom-transaction-example/" caption="Custom Transaction Example Source Code" %}
 
