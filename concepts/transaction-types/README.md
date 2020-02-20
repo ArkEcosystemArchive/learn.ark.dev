@@ -36,6 +36,8 @@ In the following sections basic transaction types and their structure is present
 
 {% page-ref page="multisignature-transaction.md" %}
 
+{% page-ref page="ipfs-transaction.md" %}
+
 {% page-ref page="multipayment-transaction.md" %}
 
 {% page-ref page="delegate-resignation.md" %}
