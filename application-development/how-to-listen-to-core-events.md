@@ -73,4 +73,6 @@ emitter.on("block.forged", block => { ... }
 |  transaction.pool.rejected | Fires when transactions are rejected and not added to the transaction pool. |
 | transaction.pool.removed | Fires when a transaction is removed from the transaction pool by its ID. |
 | transaction.reverted | This event will be emitted when a transaction is reverted from a wallet. Often fired in conjunction with `block.reverted`. |
+| wallet.vote | This event occurs when a wallet/address has voted for a delegate. |
+| wallet.unvote | This event occurs when a wallet/address has un-voted a delegate. |
 
