@@ -42,7 +42,5 @@ In the following sections basic transaction types and their structure is present
 
 {% page-ref page="delegate-resignation.md" %}
 
-**Devnet only:**
-
 {% page-ref page="hashed-time-locked-contracts.md" %}
 
