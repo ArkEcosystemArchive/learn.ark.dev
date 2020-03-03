@@ -12,7 +12,7 @@ This is something to keep in mind when accessing these models through the Event 
 
 Where possible, these discrepancies are noted below. The `transformers` directories in the `core-api` module help to paint a complete picture; they can be found in their respective repositories:
 
-{% embed url="https://github.com/ArkEcosystem/core/blob/master/packages/core-api/src/services/transformer.ts" %}
+{% embed url="https://github.com/ArkEcosystem/core/blob/master/packages/core-api/src/services/transformer.ts" caption="Transformers for the data structures returned via core-api" %}
 
 ## Block
 
