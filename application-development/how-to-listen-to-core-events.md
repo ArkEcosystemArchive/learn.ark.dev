@@ -38,6 +38,10 @@ emitter.on("block.forged", block => {
 });
 ```
 
+You can also check the source code of our `core-emitter` package here:
+
+{% embed url="https://github.com/ArkEcosystem/core/blob/13d7f83e0de8c24a685fa961d380986217353a23/packages/core-event-emitter/src/index.ts\#L12" caption="core-emitter source code" %}
+
 ## Available Core Events
 
 Enter the **event name** from table below to listen to Core blockchain events. For example:
