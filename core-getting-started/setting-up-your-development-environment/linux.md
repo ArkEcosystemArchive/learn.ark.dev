@@ -15,7 +15,9 @@ If you don't have access to a Linux box you can quickly setup one on [DigitalOce
 This guide will take you through the basic steps of setting up a development environment from scratch on a fresh Linux \(\*.deb based\) box. We officially recommend and support **Ubuntu** operating system.
 
 {% hint style="warning" %}
-The Steps 1-7 below are important if you want to get  familiar with development environment setup in more detail. However, if you can't wait to setup the dependencies and required packages, we prepared a bash script for you. Script can be found at the bottom of this page, section ["**Run Above Commands Together In One Setup Script"**](https://learn.ark.dev/core-getting-started/setting-up-your-development-environment/linux#run-above-commands-together-in-one-setup-script)**.**
+The Steps 1-7 below are important if you want to get  familiar with development environment setup in more detail. However, if you can't wait to start coding you can quickly setup the dependencies and required packages with a simple bash install script. 
+
+Script can be found at the bottom of this page, section ["**Run Above Commands Together In One Setup Script"**](https://learn.ark.dev/core-getting-started/setting-up-your-development-environment/linux#run-above-commands-together-in-one-setup-script)**.**
 {% endhint %}
 
 ## Step 1: User setup
