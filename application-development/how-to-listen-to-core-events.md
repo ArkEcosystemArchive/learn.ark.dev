@@ -67,10 +67,10 @@ emitter.on("block.forged", block => { ... }
 | state.starting | This event fires when state building is starting. |
 | state.started | This event fires when state builder has started. |
 | transaction.applied | This event will be emitted when a transaction is applied to a wallet. |
-|  transaction.expired | After a transaction has expired and is removed from the transaction pool, the `transactionGuard` emits this event. |
+| transaction.expired | After a transaction has expired and is removed from the transaction pool, the `transactionGuard` emits this event. |
 | transaction.forged | This event will be emitted when a transaction is included in a block and thus has been forged. |
 | transaction.pool.added | Fires when transactions are added to the transaction pool. |
-|  transaction.pool.rejected | Fires when transactions are rejected and not added to the transaction pool. |
+| transaction.pool.rejected | Fires when transactions are rejected and not added to the transaction pool. |
 | transaction.pool.removed | Fires when a transaction is removed from the transaction pool by its ID. |
 | transaction.reverted | This event will be emitted when a transaction is reverted from a wallet. Often fired in conjunction with `block.reverted`. |
 | wallet.vote | This event occurs when a wallet/address has voted for a delegate. |
