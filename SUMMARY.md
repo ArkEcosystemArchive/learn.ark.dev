@@ -34,7 +34,7 @@
 * [Using The Core-Tester-CLI](tools/how-to-use-the-core-tester-cli.md)
 * [Desktop-Wallet](tools/desktop-wallet/README.md)
   * [Developing Your First Application](tools/desktop-wallet/developing-your-first-plugin.md)
-  * [Developing a Wallet Theme](tools/desktop-wallet/untitled.md)
+  * [Developing a Wallet Theme](tools/desktop-wallet/developing-a-wallet-theme.md)
 * [Blockchain Explorer](tools/blockchain-explorer/README.md)
   * [How To Set Custom Branding](tools/blockchain-explorer/branding.md)
   * [How To Add New Transactions Types](tools/blockchain-explorer/custom-transactions.md)
