@@ -19,7 +19,7 @@ A general overview of important classes supporting custom transaction developmen
 
 ![The Core GTI Engine Class Diagram Excerpt](../../.gitbook/assets/1p9ngvtokkzqa6exfxw3hugmhxx2-s463snx.png)
 
-To develop a custom transaction type we need to implement code-contracts defined by **GTI interfaces and abstract classes** \(the blue colored items in the class diagram above\). Implementation is pretty straight forward. We override default transaction behaviour and add custom business logic, by implementing the **Transaction**, **Builder** and **Handler** type classes \(the green-colored items in the diagram above\) by following the steps below:
+To develop a custom transaction type we need to implement code-contracts defined by **GTI interfaces and abstract classes** \(the blue colored items in the class diagram above\). Implementation is pretty straight forward. We override default transaction behaviour and add custom business logic, by implementing the **Transaction**, **Builder** and **Handler** type classes \(the green-colored items in the diagram above\) by following the guides below:
 
 {% page-ref page="implementing-transaction-structure.md" %}
 
@@ -28,6 +28,8 @@ To develop a custom transaction type we need to implement code-contracts defined
 {% page-ref page="implement-blockchain-protocol-handler.md" %}
 
 {% page-ref page="loading-the-dapp-within-core.md" %}
+
+{% page-ref page="example-walkthrough.md" %}
 
 ## What Can Be Built With Custom Transactions?
 
