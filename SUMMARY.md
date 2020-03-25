@@ -5,8 +5,8 @@
 ## Getting Started
 
 * [Technology Stack](getting-started/technology-stack.md)
-* [Blockchain Concepts 101](https://answers.ark.dev/blockchain-concepts-101/introduction-to-blockchain)
 * [Core Fundamentals](getting-started/core-fundamentals.md)
+* [Blockchain Concepts 101](https://answers.ark.dev/blockchain-concepts-101/introduction-to-blockchain)
 
 ## Getting Started With Core <a id="core-getting-started"></a>
 
