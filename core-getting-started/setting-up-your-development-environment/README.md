@@ -28,6 +28,6 @@ This guide will take you through the basic steps of setting up a development env
 This tutorials are for **setting up the development environment** for ARK core. If you are looking to run a core node in production, we provide other tools and resources, such as:
 
 * [AR](https://ark.io/deployer)[K Deployer](https://ark.io/deployer) - Create Blockchain in Minutes
-* [Core Server Installation Instructions](https://docs.ark.io/tutorials/node/setup.html#bare-metal) - Server Installation Instructions For Production Node
+* [Core Server Installation Instructions](https://guides.ark.dev/devops-guides/core-node-secure-setup) - Server Installation Instructions For Production Node
 {% endhint %}
 
