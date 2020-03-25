@@ -10,8 +10,8 @@ In ARK, every transaction has a nonce. The nonce is the number of transactions s
 
 **Specifically:**
 
-* **Transactions must be in order.**  You cannot have a transaction with a nonce of **1** mined before one with a nonce of **0**. In the case of ARK, it’s a monotonically increasing number that starts at **1** for the first transaction a wallet **sends**. Each subsequent transaction that wallet sends, will increment the nonce by one. 
-* **No skipping!**  You cannot have a transaction with a nonce of **2** mined if you have not already sent transactions with a nonce of **1** and **0**. There can be no gaps between transaction nonces, so every new transaction will have a nonce that is one higher than the last transaction.
+* **Transactions must be in order.**  You cannot have a transaction with a nonce of **1** forged before one with a nonce of **0**. In the case of ARK, it’s a monotonically increasing number that starts at **1** for the first transaction a wallet **sends**. Each subsequent transaction that wallet sends, will increment the nonce by one. 
+* **No skipping!**  You cannot have a transaction with a nonce of **2** forged if you have not already sent transactions with a nonce of **1** and **0**. There can be no gaps between transaction nonces, so every new transaction will have a nonce that is one higher than the last transaction.
 
 ## How To Get Nonce Value For An Address?
 
@@ -60,7 +60,7 @@ This value prevents double-spending and makes long range attacks much harder, as
 * They wait for it to register.
 * Something is collected from this first transaction.
 * Another transaction is quickly sent with a high gas price.
-* The second transaction is mined first, therefore invalidating the first transaction.
+* The second transaction is forged first, therefore invalidating the first transaction.
 
 This is why exchanges wait for you to have a certain number of confirmations before allowing you to trade freshly-deposited funds.
 

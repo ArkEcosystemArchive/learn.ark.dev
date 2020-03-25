@@ -5,7 +5,7 @@ description: >-
   complex parts of it.
 ---
 
-# How To Write Custom Transactions Types
+# How To Write New Transactions Types
 
 {% hint style="success" %}
 The GTI engine was initially designed to assist our developers make implementations of new transaction types easier, maintainable, and standardized across the board. **By putting some logic behind custom transaction types, we feel this is a much better and more powerful approach to develop stronger use-cases than with conventional smart contracts.**

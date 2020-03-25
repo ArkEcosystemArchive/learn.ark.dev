@@ -1,7 +1,12 @@
 # Table of contents
 
 * [Welcome To ARK Learning Hub](README.md)
-* [Technology Stack](technology-stack.md)
+
+## Getting Started
+
+* [Technology Stack](getting-started/technology-stack.md)
+* [Blockchain Concepts 101](https://answers.ark.dev/blockchain-concepts-101/introduction-to-blockchain)
+* [Core Fundamentals](getting-started/core-fundamentals.md)
 
 ## Getting Started With Core <a id="core-getting-started"></a>
 
@@ -17,13 +22,13 @@
 * [How To Write Core dApps](application-development/how-to-write-core-dapps/README.md)
   * [Basic Module Structure](application-development/how-to-write-core-dapps/basic-structure-and-properties.md)
   * [Creating Your First Core Module](application-development/how-to-write-core-dapps/setting-up-your-first-module.md)
-* [How To Create API Servers](application-development/how-to-create-api-servers.md)
-* [How To Write Custom Transactions Types](application-development/how-to-write-custom-transactions-types/README.md)
+* [How To Write New Transactions Types](application-development/how-to-write-custom-transactions-types/README.md)
   * [Define Transaction Structure](application-development/how-to-write-custom-transactions-types/implementing-transaction-structure.md)
   * [Implement Transaction Builder](application-development/how-to-write-custom-transactions-types/implement-transaction-builder.md)
   * [Implement Blockchain Protocol Handlers](application-development/how-to-write-custom-transactions-types/implement-blockchain-protocol-handler.md)
   * [Loading The dApp Within Core](application-development/how-to-write-custom-transactions-types/loading-the-dapp-within-core.md)
   * [Running The Example](application-development/how-to-write-custom-transactions-types/example-walkthrough.md)
+* [How To Create API Servers](application-development/how-to-create-api-servers.md)
 * [How to Use The Milestones](application-development/how-to-use-milestones.md)
 * [How To Listen To Core Events](application-development/how-to-listen-to-core-events.md)
 * [Understanding Testing Within Core](application-development/understanding-testing-within-core.md)
