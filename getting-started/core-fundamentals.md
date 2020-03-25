@@ -12,6 +12,10 @@ Read and understand the key concepts explaining transaction types, cryptography,
 
 {% page-ref page="technology-stack.md" %}
 
+{% page-ref page="../concepts/core-network-profiles.md" %}
+
+{% page-ref page="../concepts/core-node-running-modes.md" %}
+
 ## What is ARK?
 
 The ARK Ecosystem allows blockchain developers to customize a sovereign blockchain complete with required feature sets. ARK’s value proposition lies in the array of services offered through the ARK Blockchain Platform. 
