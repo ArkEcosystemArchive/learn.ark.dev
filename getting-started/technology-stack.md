@@ -8,7 +8,11 @@ As a team of people using technology to make DLT products, it's essential to be 
 
 ARK Core is written in [TypeScript](https://github.com/microsoft/typescript), and it has been using [Lerna](https://github.com/lerna/lerna) to manage the development and publication of its packages and uses [Node.js](https://nodejs.org) as execution environment. 
 
-## Development tools 
+Read and understand the key concepts explaining transaction types, cryptography, blockchain protocol, core server/node running modes and more, by following the link below.
+
+{% page-ref page="core-fundamentals.md" %}
+
+## Technology Stack 
 
 The following development tools need to be installed on your machine to develop an application using ARK Core:
 
@@ -19,23 +23,11 @@ The following development tools need to be installed on your machine to develop 
 * [Lerna.js](https://lerna.js.org/) - A tool for managing JavaScript projects with multiple packages.
 * [TypeScript](https://github.com/microsoft/typescript) -  A language for application-scale of JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript.
 
-## Blockchain Fundamentals
-
-The guidebook contains some technical references and coding tutorials that might overwhelm beginners. ARK community developers and the ARK Team can be contacted on [slack](https://ark.io/slack). Do not hesitate to contact us, even if you feel the question is quite basic. Also feel free to look into the key concepts explaining transaction types, cryptography and core server running modes \(links below and in the sidebar\).
-
-{% page-ref page="../concepts/understanding-transaction-nonce.md" %}
-
-{% page-ref page="../concepts/transaction-lifecycle.md" %}
-
-{% page-ref page="../concepts/cryptography.md" %}
-
-{% page-ref page="../concepts/transaction-types/" %}
-
 ## Operating System
 
-While we have a strong preference for Linux \(e.g. Ubuntu or CentOS\), however we know that both Node.js and Postgres run on almost any environment including Microsoft Windows Desktop & Server. 
+While we have a strong preference for **Ubuntu** **Linux** we know that both Node.js and Postgres run on almost any environment including Microsoft Windows Desktop & Server. 
 
 {% hint style="info" %}
-**All production and support tools are developed for Linux operating systems**. We do not support Windows environment operating system in production. However it is still possible to develop your applications on a windows box.
+**All production and support tools are developed for Ubuntu Linux operating systems**. We do not support Windows environment operating system in production. However it is still possible to develop your applications on a windows box.
 {% endhint %}
 
