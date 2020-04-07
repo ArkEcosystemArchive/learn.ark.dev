@@ -6,6 +6,10 @@ description: HTLC Transaction Specifications
 
 A Hashed Time-Lock Contract \(HTLC\) is a set of transaction types that permits a designated party \(the "sender/seller"\) to **LOCK** funds by disclosing the preimage \(secret\) of a hash. It also permits a second party \(the "recipient/buyer"\) to **CLAIM** the funds, or after a timeout is reached enter a **REFUND** situation.
 
+For a detailed explanation of how HTLC transaction works, please read our blog post here:
+
+{% embed url="https://blog.ark.io/ark-core-series-hash-time-locked-contracts-6611a23fcba3" caption="Explaining the mechanics of HTLC transactions" %}
+
 ## HTLC Lock
 
 The purpose of this transaction is to lock funds of the sender and made them possible for retrieval by the recipient, if he knows the shared secret.

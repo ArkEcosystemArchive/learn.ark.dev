@@ -6,6 +6,14 @@ description: MultiSignature Transaction Specifications
 
 By utilizing Schnorr Signatures - multiple signatures and their corresponding keys can be aggregated into one. This enables the creation of transactions that must be authorized by a minimum number of participants \(signatures\).
 
+For a detailed explanation of how MultiSignature transaction works, please **read our blog post here:**
+
+{% embed url="https://blog.ark.io/ark-core-series-schnorrs-multisignatures-4979caac887a" %}
+
+You can also set-up your own Multisignature server by following this guide:
+
+{% embed url="https://blog.ark.io/ark-core-series-multisignature-server-9557f5a9e711" %}
+
 | References |  |
 | :--- | :--- |
 | ARK Improvement Proposals | [AIP18](https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-18.md) |
