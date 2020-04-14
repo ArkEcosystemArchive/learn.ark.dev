@@ -65,14 +65,14 @@ docker-compose up postgres
 To run the Postgres container in the [background](https://docs.docker.com/engine/reference/run/) execute the following command:
 
 ```bash
-docker-compose up postgres -d
+docker-compose up -d postgres
 ```
 
 _In case you need to start with a clean Database:_
 
 ```bash
 docker-compose down -v
-docker-compose up postgres -d
+docker-compose up -d postgres
 ```
 
 ## Approach 2: Serve Core Node and Postgres as a Collection of Containers
