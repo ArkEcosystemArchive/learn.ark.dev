@@ -7,7 +7,7 @@ description: >-
 # Development Environment Setup
 
 {% hint style="success" %}
-If you don't have access to a Linux box you can quickly setup one on [DigitalOcean](https://cloud.digitalocean.com) by using this 50$ referral link: [https://m.do.co/c/09d061526b12](https://m.do.co/c/09d061526b12).
+If you don't have access to a Linux box you can quickly setup one on [DigitalOcean](https://cloud.digitalocean.com) by using this **100$** referral link: [https://m.do.co/c/09d061526b12](https://m.do.co/c/09d061526b12).
 {% endhint %}
 
 ## Introduction
