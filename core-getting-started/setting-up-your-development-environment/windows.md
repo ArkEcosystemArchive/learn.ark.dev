@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-It's possible to use your favourite Windows IDE locally and build, test and run ARK Core in a native Linux environment. This can be done by using [Docker for Windows](https://docs.docker.com/docker-for-windows/).
+It's possible to use your favorite Windows IDE locally and build, test and run ARK Core in a native Linux environment. This can be done by using [Docker for Windows](https://docs.docker.com/docker-for-windows/).
 
 ## Step 1: Install Prerequisites
 
