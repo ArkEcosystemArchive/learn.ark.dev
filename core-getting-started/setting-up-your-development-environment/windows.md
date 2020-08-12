@@ -21,7 +21,7 @@ Follow your operating system instructions and install:
 
 ### Step 2.1: Configure Shared Drives
 
-Once you installed [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install) you'll have to configure _**Shared Drives**_ so your Linux container can mount ARK Core repository cloned locally on your Windows system. Make sure your **firewall** and **antivirus** are turned off or configured to allow the above operation. Follow [Docker Documentation](https://docs.docker.com/docker-for-windows/) - section _Shared Drives_.
+Once you installed [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install) you'll have to configure _**File Sharing**_ so your Linux container can mount ARK Core repository cloned locally on your Windows system. Make sure your **firewall** and **antivirus** are turned off or configured to allow the above operation. Follow [Docker Documentation](https://docs.docker.com/docker-for-windows/) - section **FILE SHARING**.
 
 ### Step 2.2: Setup Line Endings Style
 
