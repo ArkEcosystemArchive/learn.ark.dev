@@ -66,7 +66,7 @@ sudo apt-get install -y yarn
 
 ## Step 5: Install Dependencies
 
-Dependencies are needed for `core` to be compiled, run and controlled while living inside you linux based environment. To command below installs some of those needed dependencies that are used by core or related scripts.
+Dependencies are needed for `core` to be compiled, run and controlled while living inside you linux based environment. The command below installs some of those needed dependencies that are used by core or related scripts.
 
 ```bash
 sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf automake python libpq-dev jq -y
